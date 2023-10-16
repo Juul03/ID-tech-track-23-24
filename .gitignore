@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+## Own adds
+ID-tech-track-23-24.wiki/
+
 # User-specific files
 *.rsuser
 *.suo
