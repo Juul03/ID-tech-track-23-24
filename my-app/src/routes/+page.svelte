@@ -3,9 +3,11 @@
 
 <script>
 	import TestBarchart from '../components/test.svelte';
+    import MyDataChart from '../components/testBarchart.svelte'
 </script>
 
 <TestBarchart/>
+<MyDataChart/>
 
 <svelte:head>
 	<title>Barchart test</title>
