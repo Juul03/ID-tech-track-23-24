@@ -1,12 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
-	import { select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
+    import { select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
 
-	let incidentData = [];
-
+	let incidentData;
+    
 	// Fetch the JSON data
 	async function fetchJSONData() {
-		const response = await fetch('src/data/output.json'); // Path to your output.json file
+		const response = await fetch('src/data/output.json');
 		if (response.ok) {
 			incidentData = await response.json();
 			countAgeOccurrences();
@@ -19,6 +19,7 @@
 	onMount(async () => {
 		await fetchJSONData();
 	});
+
 
 	// Count the amount each age occures in the dataset
 	const countAgeOccurrences = () => {
@@ -89,7 +90,7 @@
 </svg>
 
 <style>
-	svg {
+	/* svg {
 		margin: 0 50px;
-	}
+	} */
 </style>
