@@ -88,14 +88,3 @@
 	<g id="yAxis" />
 	<g id="bars" />
 </svg>
-
-<style>
-    h2#special {
-        background:var(--primary-color);
-    }
-      
-
-	/* svg {
-		margin: 0 50px;
-	} */
-</style>
