@@ -14,7 +14,10 @@
 
 		//TODO: When datatype of age in the dataset is parseInt, then change ageString to formData.age
 		const incidents = await fetchIncident(formData.gender, ageString);
-		// Perform any API requests, form validation, etc.
+
+        //TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
+		
+        // Perform any API requests, form validation, etc.
 		// Reset form fields if needed: formData = { gender: '', age: null };
 	};
 
