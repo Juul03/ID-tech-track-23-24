@@ -1,0 +1,19 @@
+body {
+    background:yellow;
+
+    h1 {
+        color:red;
+    }
+}
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: green;
+
+    >a {
+        background:purple;
+    }
+}

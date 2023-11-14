@@ -12,5 +12,5 @@
 <svelte:head>
 	<title>Barchart test</title>
 	<link rel="icon" href="/images/favicon.png" type="image/png" />
-	<link rel="stylesheet" href="generalstyle.css" />
+	<link rel="stylesheet" href="generalstyle.scss" />
 </svelte:head>

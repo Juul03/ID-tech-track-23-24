@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
     import { select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
 
-	let incidentData;
+	let incidentData = [];
     
 	// Fetch the JSON data
 	async function fetchJSONData() {
@@ -90,6 +90,11 @@
 </svg>
 
 <style>
+    h2#special {
+        background:var(--primary-color);
+    }
+      
+
 	/* svg {
 		margin: 0 50px;
 	} */
