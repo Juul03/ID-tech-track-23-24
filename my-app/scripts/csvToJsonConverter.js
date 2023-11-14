@@ -32,7 +32,8 @@ csvtojson()
       // Split age_gender into age and gender
       const ageGenderParts = obj.age_gender.split(' ');
       if (ageGenderParts.length === 2) {
-        const age = ageGenderParts[0];
+        let age = ageGenderParts[0];
+        age = parseInt(age);
         const gender = ageGenderParts[1].slice(-1); // Extract the last character for gender
         // Add new attributes age and gender to the object
         obj.age = `${age}`;

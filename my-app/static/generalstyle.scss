@@ -5,9 +5,11 @@
 
 :root {
     --primary-color:#192655;
-    --secundary-color:#3876BF;
+    --secundary-color:#F3F0CA;
     --accent-color:#E1AA74;
-    --text-color:#F3F0CA;
+    --text-color:#3876BF;
+
+    --standard-transition-time:.25s;
 }
 
 body {
@@ -19,6 +21,12 @@ body {
 }
 
 * {
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
     font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
 }
 
