@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'Waltograph';
+    src: url('/fonts/Waltograph/waltographUI.ttf') format('truetype');
+}
+
+:root {
+    --primary-color:#192655;
+    --secundary-color:#3876BF;
+    --accent-color:#E1AA74;
+    --text-color:#F3F0CA;
+}
+
 body {
-    background:yellow;
+    background:var(--primary-color);
 
     h1 {
         color:red;
@@ -7,7 +19,7 @@ body {
 }
 
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {

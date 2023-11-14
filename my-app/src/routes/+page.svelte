@@ -1,13 +1,12 @@
-<h1>Welcome to SvelteKit kaas</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
 <script>
 	import TestBarchart from '../components/test.svelte';
     import MyDataChart from '../components/testBarchart.svelte'
+    import StarterForm from '../components/starterForm.svelte'
 </script>
 
-<TestBarchart/>
-<MyDataChart/>
+<StarterForm/>
+<!-- <TestBarchart/>
+<MyDataChart/> -->
 
 <svelte:head>
 	<title>Barchart test</title>
