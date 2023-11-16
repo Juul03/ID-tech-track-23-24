@@ -1,7 +1,11 @@
 import csvtojson from 'csvtojson';
 import { writeFile } from 'fs/promises';
+import path from 'path';
 
-const csvFilePath = 'my-app/static/data/data.csv';
+const csvFilePath = path.resolve('static/data/data.csv');
+// Why not just this?
+// const csvFilePath = 'src/data/data.csv';
+// Because of the static file, resolve makes the path absolute so it is relative from every directory it is accessed from
 
 const padWithZero = (num) => {
   if (num < 10) {
@@ -44,7 +48,7 @@ csvtojson()
     });
 
     // Save the JSON data to a file
-    writeFile('my-app/src/data/output.json', JSON.stringify(formattedJSON, null, 2))
+    writeFile('src/data/output.json', JSON.stringify(formattedJSON, null, 2))
       .then(() => {
         console.log('Conversion completed. JSON data saved to output.json');
       })
