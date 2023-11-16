@@ -3,6 +3,7 @@ import { writeFile } from 'fs/promises';
 
 const csvFilePath = 'my-app/static/data/data.csv';
 
+
 const padWithZero = (num) => {
   if (num < 10) {
     return `0${num}`;

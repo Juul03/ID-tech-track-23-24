@@ -3,7 +3,7 @@
 
 <script>
 	import TestBarchart from '../components/test.svelte';
-    import MyDataChart from '../components/testBarchart.svelte'
+    import MyDataChart from '../components/testBarchart.svelte';
 </script>
 
 <TestBarchart/>
