@@ -9,7 +9,7 @@
     "description": "guest with pre-existing condition sustained injury to toes",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -21,7 +21,7 @@
     "description": " guest fell exiting vehicle, developed blood clot in leg",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -33,7 +33,7 @@
     "description": "fractured left ankle exiting ride",
     "age": "40",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -45,7 +45,7 @@
     "description": "guest with pre-existing condition was briefly unresponsive while experiencing attraction",
     "age": "83",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -69,7 +69,7 @@
     "description": "guest with pre-existing lost consciousness after exiting the attraction",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -81,7 +81,7 @@
     "description": "guest with a pre-existing condition had a seizure after experiencing the attraction",
     "age": "25",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -93,7 +93,7 @@
     "description": "guest felt unwell upon exiting attraction",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -105,7 +105,7 @@
     "description": "guest felt disoriented after experiencing attraction",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -117,7 +117,7 @@
     "description": "guest with pre-existing condition felt lightheaded after experiencing the attraction",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -129,7 +129,7 @@
     "description": "guest with pre-existing condition had a seizure after experiencing the attraction",
     "age": "27",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -141,7 +141,7 @@
     "description": "guest with pre-existing condition felt ill after riding attraction",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -153,7 +153,7 @@
     "description": "guest temporarily lost consciousness while on attraction",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -165,7 +165,7 @@
     "description": "guest with pre-existing condition felt disoriented after riding attraction",
     "age": "18",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -177,7 +177,7 @@
     "description": "guest fell while boarding ride",
     "age": "77",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -189,7 +189,7 @@
     "description": "guest with pre-existing condition temporarily passed out on ride",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -201,7 +201,7 @@
     "description": "guest with pre-existing condition became ill after riding",
     "age": "79",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -213,7 +213,7 @@
     "description": " felt dizzy, ill and brief loss of consciousness",
     "age": "31",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -225,7 +225,7 @@
     "description": "Hypertension",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -237,7 +237,7 @@
     "description": "guest with pre-existing condition complained of pain in leg upon exiting later diagnosed with a blood clot",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -249,7 +249,7 @@
     "description": "reported difficulty moving when leaving ride",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -273,7 +273,7 @@
     "description": "Seizure after exiting ride",
     "age": "39",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -285,7 +285,7 @@
     "description": "guest with pre-existing conditions felt ill",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -297,7 +297,7 @@
     "description": "stomach pain",
     "age": "44",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -309,7 +309,7 @@
     "description": "guest with pre-existing condition collapsed; later passed away at hospital",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -321,7 +321,7 @@
     "description": "guest with pre-existing condition complained of neck pain",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -333,7 +333,7 @@
     "description": " guest complained of pain,  tremors and numbness in right arm after exiting",
     "age": "75",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -345,7 +345,7 @@
     "description": " guest with pre-existing health conditions experienced headache & loss of consciousness after riding,  subsequently underwent surgery for aneurysm and released from hospital",
     "age": "63",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -357,7 +357,7 @@
     "description": "chest pain",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -369,7 +369,7 @@
     "description": " guest with preexisting condition exited ride with chest pain and felt dizzy, briefly lost consciousness and fell",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -381,7 +381,7 @@
     "description": "Seizure.",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -393,7 +393,7 @@
     "description": "got sick on ride due to lights.",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -405,7 +405,7 @@
     "description": "knee injury",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -417,7 +417,7 @@
     "description": "lacerated ankle",
     "age": "12",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -429,7 +429,7 @@
     "description": " fell after getting off ride, fractured hip",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -441,7 +441,7 @@
     "description": "guest fell and fractured leg while entering attraction vehicle",
     "age": "75",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -453,7 +453,7 @@
     "description": "guest fell while exiting the ride vehicle; injured hip",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -465,7 +465,7 @@
     "description": "felt ill after riding",
     "age": "50",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -477,7 +477,7 @@
     "description": "guest with pre-existing health condition felt dizziness and chest pains",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -489,7 +489,7 @@
     "description": "guest with history of diabetic seizures experienced seizure",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -501,7 +501,7 @@
     "description": "fell while exiting; fractured hip",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -513,7 +513,7 @@
     "description": "guest felt ill after riding",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -525,7 +525,7 @@
     "description": "fell on moving walkway in load area: fractured spine.",
     "age": "73",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -537,7 +537,7 @@
     "description": "arm injury",
     "age": "5",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Universal",
@@ -549,7 +549,7 @@
     "description": "fractured ankle",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -561,7 +561,7 @@
     "description": "Fractured arm.",
     "age": "14",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -573,7 +573,7 @@
     "description": "pelvis pain",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -585,7 +585,7 @@
     "description": "head pain",
     "age": "33",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -597,7 +597,7 @@
     "description": "fainting/head injury",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -609,7 +609,7 @@
     "description": "general illness",
     "age": "80",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -621,7 +621,7 @@
     "description": "broken arm",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -633,7 +633,7 @@
     "description": "head laceration",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Disney World",
@@ -645,7 +645,7 @@
     "description": " tripped while approaching seat, fractured femur",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -657,7 +657,7 @@
     "description": "guest with pre-existing condition had difficulty breathing",
     "age": "1",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -669,7 +669,7 @@
     "description": "guest experienced sudden memory loss",
     "age": "44",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -681,7 +681,7 @@
     "description": "guest with pre-existing condition experienced stroke-like symptoms",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -693,7 +693,7 @@
     "description": "fractured toe on outer wall",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -705,7 +705,7 @@
     "description": "loss of consciousness and seizure like symptoms.",
     "age": "18",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -717,7 +717,7 @@
     "description": "Lost balance and fell; fractured tibia",
     "age": "54",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -729,7 +729,7 @@
     "description": " injured ankle getting into raft, went to hospital",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -741,7 +741,7 @@
     "description": " fell while exiting attraction, fractured hip",
     "age": "65",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -751,7 +751,7 @@
     "Theme_Park": "Blizzard Beach",
     "age_gender": "33yof",
     "description": "seizure",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -763,7 +763,7 @@
     "description": "Guest jumped into creek and fractured ankle",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -775,7 +775,7 @@
     "description": "Hit head on bottom of catch pool",
     "age": "17",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -787,7 +787,7 @@
     "description": "Chest pain",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -799,7 +799,7 @@
     "description": "head and neck pain",
     "age": "54",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -835,7 +835,7 @@
     "description": "dizziness",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -847,7 +847,7 @@
     "description": "chest pain",
     "age": "14",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -859,7 +859,7 @@
     "description": " guest lost consciousness, parents indicated he had a pre-existing heart condition. Later passed away at hospital",
     "age": "30",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -871,7 +871,7 @@
     "description": "passed out",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -883,7 +883,7 @@
     "description": "guest with pre-existing condition felt dizzy after experiencing attraction",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -895,7 +895,7 @@
     "description": "guest with pre-existing condition had chest pains and shortness of breath",
     "age": "53",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -907,7 +907,7 @@
     "description": "guest felt dizzy after riding attraction",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -919,7 +919,7 @@
     "description": "guest with pre-existing condition vomited after experiencing the attraction",
     "age": "58",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "vomiting"
   },
   {
     "Company": "Disney World",
@@ -931,7 +931,7 @@
     "description": "seizure after departing from attraction",
     "age": "24",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -943,7 +943,7 @@
     "description": "chest pain",
     "age": "73",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -955,7 +955,7 @@
     "description": "seizure after riding",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -967,7 +967,7 @@
     "description": "seizure",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -977,7 +977,7 @@
     "Theme_Park": "Animal Kingdom",
     "age_gender": "61yof",
     "description": "seizure",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -989,7 +989,7 @@
     "description": "guest with pre-existing heart condition reported chest pain",
     "age": "73",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1001,7 +1001,7 @@
     "description": "chest pain: anxiety",
     "age": "40",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -1013,7 +1013,7 @@
     "description": "presented with confusion",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1025,7 +1025,7 @@
     "description": "Back Pain.",
     "age": "8",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -1037,7 +1037,7 @@
     "description": "It is unclear whether the guest rode this attraction. Guest collapsed adjacent to catch pool; later passed away",
     "age": "52",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -1049,7 +1049,7 @@
     "description": "fractured arm",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -1061,7 +1061,7 @@
     "description": "guest with pre-existing condition had a seizure",
     "age": "18",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -1073,7 +1073,7 @@
     "description": "laceration/tear genitalia",
     "age": "9",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Universal",
@@ -1097,7 +1097,7 @@
     "description": " Nausea, heartburn, chest pain, numb L arm",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1109,7 +1109,7 @@
     "description": "dizziness",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1121,7 +1121,7 @@
     "description": "neck pain",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1133,7 +1133,7 @@
     "description": "back pain",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1145,7 +1145,7 @@
     "description": "unconscious",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -1157,7 +1157,7 @@
     "description": "presented with confusion",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1169,7 +1169,7 @@
     "description": "lowered level of consciousness",
     "age": "17",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -1181,7 +1181,7 @@
     "description": "eye discomfort",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -1193,7 +1193,7 @@
     "description": "vomiting",
     "age": "29",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "vomiting"
   },
   {
     "Company": "Universal",
@@ -1205,7 +1205,7 @@
     "description": " chest pain,  shortness of breath and nausea",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1217,7 +1217,7 @@
     "description": "Upper back pain.",
     "age": "16",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1229,7 +1229,7 @@
     "description": "seizure (pre-existing condition)",
     "age": "49",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -1241,7 +1241,7 @@
     "description": "complained of lower back pain.",
     "age": "55",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1253,7 +1253,7 @@
     "description": "complained of neck pain.",
     "age": "62",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1265,7 +1265,7 @@
     "description": "fractured back.",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -1277,7 +1277,7 @@
     "description": "Came off ride not feeling well.",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -1289,7 +1289,7 @@
     "description": "foot pain",
     "age": "11",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1313,7 +1313,7 @@
     "description": "weakness",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1325,7 +1325,7 @@
     "description": "Left arm numbness",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Universal",
@@ -1349,7 +1349,7 @@
     "description": "back pain (pre-existing condition)",
     "age": "44",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1361,7 +1361,7 @@
     "description": "injured right foot.",
     "age": "13",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -1373,7 +1373,7 @@
     "description": "felt ill.",
     "age": "73",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1385,7 +1385,7 @@
     "description": "not feeling well on ride.",
     "age": "52",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1397,7 +1397,7 @@
     "description": " guest felt ill, dizzy and disoriented",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1409,7 +1409,7 @@
     "description": "chest pain",
     "age": "88",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1421,7 +1421,7 @@
     "description": " loss of consciousness while on ride,  pre-existing condition",
     "age": "76",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -1433,7 +1433,7 @@
     "description": "Report of possible heart attack for guest with history of heart condition",
     "age": "77",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -1445,7 +1445,7 @@
     "description": "heart attack later died.",
     "age": "81",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -1457,7 +1457,7 @@
     "description": "Felt dizzy.",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1469,7 +1469,7 @@
     "description": "Seizure.",
     "age": "27",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -1481,7 +1481,7 @@
     "description": "Felt disoriented and sick.",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1493,7 +1493,7 @@
     "description": "Shortness of breath and chest pains.",
     "age": "60",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1505,7 +1505,7 @@
     "description": "felt dizzy and ill",
     "age": "74",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1517,7 +1517,7 @@
     "description": "seizure after experiencing the attraction",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -1529,7 +1529,7 @@
     "description": "guest felt ill; migraine and vomiting",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1541,7 +1541,7 @@
     "description": "guest with pre-existing condition became ill after riding attraction",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1553,7 +1553,7 @@
     "description": "guest became dizzy and nauseous after riding the attraction",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1565,7 +1565,7 @@
     "description": "guest experienced a seizure after riding attraction",
     "age": "26",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -1577,7 +1577,7 @@
     "description": "guest with history of dislocating kneecap had reoccurrence",
     "age": "22",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -1589,7 +1589,7 @@
     "description": "guest with pre-existing condition had nausea and vomited after the ride",
     "age": "58",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1601,7 +1601,7 @@
     "description": "felt something in eye irritation",
     "age": "34",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Disney World",
@@ -1613,7 +1613,7 @@
     "description": "reported being struck on head; headache; dizziness",
     "age": "30",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1625,7 +1625,7 @@
     "description": "seizure after exiting.",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -1637,7 +1637,7 @@
     "description": " guest who felt ill at times earlier in the day, felt dizzy, shaky and numbness after attraction",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1649,7 +1649,7 @@
     "description": "temporary memory loss after exiting ride",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -1661,7 +1661,7 @@
     "description": "Guest felt lightheaded & fell injuring right knee & arm; brief loss of consciousness.",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1673,7 +1673,7 @@
     "description": " nausea and dizziness,  briefly lost consciousness after ride",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1685,7 +1685,7 @@
     "description": "guest with pre-existing condition felt light headed after exiting ride",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1697,7 +1697,7 @@
     "description": "guest felt ill & disoriented with slurred speech",
     "age": "29",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1709,7 +1709,7 @@
     "description": " guest not feeling well riding attraction, blocked arteries",
     "age": "71",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1721,7 +1721,7 @@
     "description": " history of heart condition, felt ill",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1733,7 +1733,7 @@
     "description": "felt dizzy and ill",
     "age": "33",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1745,7 +1745,7 @@
     "description": "chest pain",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1757,7 +1757,7 @@
     "description": "felt dizzy and ill",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1769,7 +1769,7 @@
     "description": " felt ill, difficulty breathing; later had heart attack",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1779,7 +1779,7 @@
     "Theme_Park": "Animal Kingdom",
     "age_gender": "27yom",
     "description": "seizure",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -1791,7 +1791,7 @@
     "description": "felt ill",
     "age": "66",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1803,7 +1803,7 @@
     "description": "felt lightheaded and weak",
     "age": "77",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1815,7 +1815,7 @@
     "description": "stomach pain",
     "age": "72",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -1827,7 +1827,7 @@
     "description": "felt hot & dizzy",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1839,7 +1839,7 @@
     "description": "felt ill before & after riding ride; trouble breathing & blurred vision",
     "age": "78",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -1851,7 +1851,7 @@
     "description": "Complained of dizziness and loss of memory after riding",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1863,7 +1863,7 @@
     "description": "Guest with history of heart condition was unconscious at unload and passed away",
     "age": "44",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -1875,7 +1875,7 @@
     "description": "guest experienced cardiac symptoms after exiting the attraction",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -1887,7 +1887,7 @@
     "description": "guest felt nauseous after experiencing the attraction",
     "age": "72",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1899,7 +1899,7 @@
     "description": "guest with pre-existing condition felt chest pain and dizziness after riding.",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1911,7 +1911,7 @@
     "description": " nausea, dizziness and shortness of breath",
     "age": "51",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -1923,7 +1923,7 @@
     "description": "seizure",
     "age": "27",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -1935,7 +1935,7 @@
     "description": "fainting/chest pain (pre-existing condition)",
     "age": "76",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -1947,7 +1947,7 @@
     "description": "fainting",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -1959,7 +1959,7 @@
     "description": "ankle pain",
     "age": "38",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1971,7 +1971,7 @@
     "description": "arm pain",
     "age": "3",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -1983,7 +1983,7 @@
     "description": "weakness (pre-existing condition)",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -1995,7 +1995,7 @@
     "description": "fell entering boat; fractured leg",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -2007,7 +2007,7 @@
     "description": "injured back",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -2019,7 +2019,7 @@
     "description": "lost balance & fell from seat",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -2031,7 +2031,7 @@
     "description": "Lost consciousness while on ride.",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -2043,7 +2043,7 @@
     "description": "guest injured her ankle",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -2055,7 +2055,7 @@
     "description": "chest pains",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2079,7 +2079,7 @@
     "description": "guest with preexisting condition had numbness and felt dizzy.",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -2091,7 +2091,7 @@
     "description": "guest with pre-existing condition had brief loss of consciousness",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -2103,7 +2103,7 @@
     "description": " felt ill, possible heart attack",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -2115,7 +2115,7 @@
     "description": "chest pain and loss of consciousness.",
     "age": "71",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2127,7 +2127,7 @@
     "description": "seizure",
     "age": "25",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -2139,7 +2139,7 @@
     "description": "back pain",
     "age": "7",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2151,7 +2151,7 @@
     "description": "headache",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -2163,7 +2163,7 @@
     "description": "chest pain",
     "age": "42",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2175,7 +2175,7 @@
     "description": " anxious, difficulty breathing",
     "age": "17",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2187,7 +2187,7 @@
     "description": "abdominal pain",
     "age": "36",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2211,7 +2211,7 @@
     "description": "seizure (pre-existing condition)",
     "age": "44",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -2223,7 +2223,7 @@
     "description": "vertigo",
     "age": "52",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2247,7 +2247,7 @@
     "description": "chest discomfort",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2259,7 +2259,7 @@
     "description": "difficult moving extremities (pre-existing condition)",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Universal",
@@ -2271,7 +2271,7 @@
     "description": "altered mental status",
     "age": "76",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "change in mental status"
   },
   {
     "Company": "Universal",
@@ -2283,7 +2283,7 @@
     "description": "nausea (pre-existing condition)",
     "age": "22",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2307,7 +2307,7 @@
     "description": "fainting",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2319,7 +2319,7 @@
     "description": "chest pain",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2331,7 +2331,7 @@
     "description": "hip & pelvis pain",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2343,7 +2343,7 @@
     "description": "seizure (pre-existing condition)",
     "age": "19",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -2355,7 +2355,7 @@
     "description": "chest pain",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2367,7 +2367,7 @@
     "description": "headache",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -2379,7 +2379,7 @@
     "description": "dizziness",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2391,7 +2391,7 @@
     "description": "syncope",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2451,7 +2451,7 @@
     "description": "syncope",
     "age": "28",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2475,7 +2475,7 @@
     "description": "hip pain",
     "age": "77",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2499,7 +2499,7 @@
     "description": "knee injury",
     "age": "78",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Universal",
@@ -2511,7 +2511,7 @@
     "description": "dizziness",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2535,7 +2535,7 @@
     "description": "dizziness and weakness",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2547,7 +2547,7 @@
     "description": "altered mental status",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "change in mental status"
   },
   {
     "Company": "Universal",
@@ -2559,7 +2559,7 @@
     "description": "fainting",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2607,7 +2607,7 @@
     "description": "seizure (pre-existing condition)",
     "age": "28",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -2631,7 +2631,7 @@
     "description": "fainting",
     "age": "50",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2691,7 +2691,7 @@
     "description": "head and neck pain",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -2703,7 +2703,7 @@
     "description": "upper leg pain",
     "age": "79",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2715,7 +2715,7 @@
     "description": "lowered level of consciousness",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2727,7 +2727,7 @@
     "description": "syncope",
     "age": "60",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -2739,7 +2739,7 @@
     "description": "Chest pain",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2751,7 +2751,7 @@
     "description": "fell exiting attraction",
     "age": "89",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -2763,7 +2763,7 @@
     "description": "guest fell and fractured wrist exiting the attraction",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -2775,7 +2775,7 @@
     "description": "guest with preexisting condition became dizzy.",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -2787,7 +2787,7 @@
     "description": "became disoriented after exiting ride",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -2799,7 +2799,7 @@
     "description": "guest with pre-existing condition suffered from chest pain",
     "age": "62",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2811,7 +2811,7 @@
     "description": " fell on moving walkway while loading, fractured leg",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -2823,7 +2823,7 @@
     "description": "chest pain",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2835,7 +2835,7 @@
     "description": "fell after exiting vehicle and fractured shoulder",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -2847,7 +2847,7 @@
     "description": "hit right knee getting into vehicle",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -2859,7 +2859,7 @@
     "description": "guest with pre-existing condition experienced chest pain",
     "age": "66",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2871,7 +2871,7 @@
     "description": "guest with preexisting condition felt chest pain prior to and after riding",
     "age": "35",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -2883,7 +2883,7 @@
     "description": " fell stepping onto moving walkway, fractured leg and dislocated ankle",
     "age": "79",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -2895,7 +2895,7 @@
     "description": "chest pain",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -2907,7 +2907,7 @@
     "description": "headache",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -2919,7 +2919,7 @@
     "description": "head pain",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -2931,7 +2931,7 @@
     "description": "nausea",
     "age": "35",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -2943,7 +2943,7 @@
     "description": "neck pain",
     "age": "35",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -2955,7 +2955,7 @@
     "description": "neck pain",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3003,7 +3003,7 @@
     "description": "back pain",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3015,7 +3015,7 @@
     "description": "back pain",
     "age": "36",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3027,7 +3027,7 @@
     "description": "chest pain",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -3039,7 +3039,7 @@
     "description": "back pain",
     "age": "49",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3051,7 +3051,7 @@
     "description": "chest pain",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3063,7 +3063,7 @@
     "description": "went down slide & fractured ankle",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3075,7 +3075,7 @@
     "description": "fell and hurt wrist.",
     "age": "12",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -3087,7 +3087,7 @@
     "description": "fell; hit head; back pain",
     "age": "8",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -3099,7 +3099,7 @@
     "description": "laceration while riding",
     "age": "27",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -3111,7 +3111,7 @@
     "description": "fractured hip",
     "age": "10",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3123,7 +3123,7 @@
     "description": "laceration",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Universal",
@@ -3135,7 +3135,7 @@
     "description": "head pain",
     "age": "44",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Disney World",
@@ -3147,7 +3147,7 @@
     "description": "guest with preexisting health condition lost consciousness after riding; later passed away",
     "age": "22",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3159,7 +3159,7 @@
     "description": "Seizure",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3171,7 +3171,7 @@
     "description": "difficulty breathing",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3183,7 +3183,7 @@
     "description": "guest fell exiting the attraction striking her nose",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -3195,7 +3195,7 @@
     "description": "guest tripped and fractured elbow",
     "age": "65",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3207,7 +3207,7 @@
     "description": "guest with pre-existing condition had chest pain after experiencing the attraction",
     "age": "35",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3219,7 +3219,7 @@
     "description": "guest fractured leg stepping into boat",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3231,7 +3231,7 @@
     "description": "guest with pre-existing condition had a seizure",
     "age": "5",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3243,7 +3243,7 @@
     "description": "fractured finger",
     "age": "4",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3255,7 +3255,7 @@
     "description": " guest fell while stepping into boat, fractured hip",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3267,7 +3267,7 @@
     "description": "fell while stepping into boat & fractured fibula. Passed away of pulmonary embolism on 4/7/12.",
     "age": "40",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -3279,7 +3279,7 @@
     "description": "foot pain",
     "age": "27",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3291,7 +3291,7 @@
     "description": "shoulder & wrist pain",
     "age": "76",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3303,7 +3303,7 @@
     "description": "neck pain",
     "age": "38",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3315,7 +3315,7 @@
     "description": "back pain",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -3327,7 +3327,7 @@
     "description": "Guest who was recently released from hospital and recovering from pneumonia fainted and fell on dock",
     "age": "12",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3339,7 +3339,7 @@
     "description": "guest fell from raft into flume at load area and hit head",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -3351,7 +3351,7 @@
     "description": "guest with preexisting condition had seizure",
     "age": "26",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3363,7 +3363,7 @@
     "description": "seizure",
     "age": "39",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3375,7 +3375,7 @@
     "description": "guest with pre-existing condition suffered a seizure",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3387,7 +3387,7 @@
     "description": "preexisting heart condition felt numbness on right side of body",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Universal",
@@ -3399,7 +3399,7 @@
     "description": "abdominal pain (pre-existing condition)",
     "age": "21",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -3411,7 +3411,7 @@
     "description": " Jumped out of vehicle, broke left ankle",
     "age": "42",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3423,7 +3423,7 @@
     "description": "seizure",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3435,7 +3435,7 @@
     "description": "chest pain",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3447,7 +3447,7 @@
     "description": "guest with pre-existing condition felt numbness after riding",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -3459,7 +3459,7 @@
     "description": "guest with pre-existing condition experienced chest pain",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3471,7 +3471,7 @@
     "description": "guest with pre-existing condition felt tightness in chest",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3483,7 +3483,7 @@
     "description": "guest w/ pre-existing health condition felt nauseated & had chest pain",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -3495,7 +3495,7 @@
     "description": "seizure",
     "age": "51",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3507,7 +3507,7 @@
     "description": "guest went into labor after riding attraction",
     "age": "27",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "labor"
   },
   {
     "Company": "Disney World",
@@ -3519,7 +3519,7 @@
     "description": "guest with pre-existing conditions suffered nausea and vomiting on ride",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -3531,7 +3531,7 @@
     "description": "guest experienced chest pain after riding attraction",
     "age": "71",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3543,7 +3543,7 @@
     "description": "guest with pre-existing condition had a seizure",
     "age": "19",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3555,7 +3555,7 @@
     "description": "guest with preexisting condition felt ill; neck discomfort",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -3567,7 +3567,7 @@
     "description": "developed rash before boarding; rash later worsened; temporarily passed out while on ride",
     "age": "1",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3579,7 +3579,7 @@
     "description": " felt dizzy , mini stroke",
     "age": "51",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -3591,7 +3591,7 @@
     "description": "guest had trouble breathing and numbness to her face after riding the attraction",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3603,7 +3603,7 @@
     "description": "guest felt dizzy and weak after riding the attraction",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -3615,7 +3615,7 @@
     "description": "guest lost consciousness while on the attraction",
     "age": "44",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3627,7 +3627,7 @@
     "description": "guest passed out while experiencing the attraction",
     "age": "82",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3639,7 +3639,7 @@
     "description": "guest became ill while riding the attraction",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -3651,7 +3651,7 @@
     "description": "guest became disoriented during experience.",
     "age": "73",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -3663,7 +3663,7 @@
     "description": "foot pain",
     "age": "11",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3675,7 +3675,7 @@
     "description": "knee pain",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -3687,7 +3687,7 @@
     "description": "fainting",
     "age": "10",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -3699,7 +3699,7 @@
     "description": "chest pain",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3711,7 +3711,7 @@
     "description": "passed out and struck head",
     "age": "80",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -3723,7 +3723,7 @@
     "description": "guest with pre-existing condition had a cardiac event while exiting the attraction",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -3735,7 +3735,7 @@
     "description": "Missed step and fell",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -3747,7 +3747,7 @@
     "description": "guest with pre-existing illness felt ill after riding attraction",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -3759,7 +3759,7 @@
     "description": "guest with pre-existing condition was dizzy after riding attraction",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -3771,7 +3771,7 @@
     "description": "fell and fractured ankle",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3783,7 +3783,7 @@
     "description": "tripped while exiting ride vehicle; fractured shoulder",
     "age": "49",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3795,7 +3795,7 @@
     "description": " fell while exiting, fractured wrist",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3807,7 +3807,7 @@
     "description": "fell exiting vehicle; fractured hip",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3819,7 +3819,7 @@
     "description": " fell exiting vehicle, left arm fracture",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3831,7 +3831,7 @@
     "description": "felt dizzy and sick",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -3843,7 +3843,7 @@
     "description": " Fell exiting ride, fractured hip",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3855,7 +3855,7 @@
     "description": "seizure",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3867,7 +3867,7 @@
     "description": "Broken foot.",
     "age": "74",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3879,7 +3879,7 @@
     "description": "guest fractured ankle going down slide",
     "age": "25",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3891,7 +3891,7 @@
     "description": "fractured ankle",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3903,7 +3903,7 @@
     "description": "fractured ankle",
     "age": "42",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3915,7 +3915,7 @@
     "description": "fractured leg",
     "age": "44",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -3927,7 +3927,7 @@
     "description": "Guest with preexisting condition felt chest pain after riding",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -3939,7 +3939,7 @@
     "description": "injured ankle",
     "age": "42",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -3951,7 +3951,7 @@
     "description": "seizure",
     "age": "11",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -3963,7 +3963,7 @@
     "description": "guest with pre-existing heart condition had a heart attack and passed away",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Universal",
@@ -3975,7 +3975,7 @@
     "description": "Fractured Toe",
     "age": "12",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -3987,7 +3987,7 @@
     "description": "seizure (pre-existing condition)",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -3999,7 +3999,7 @@
     "description": "hermatemesis",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -4011,7 +4011,7 @@
     "description": "dizziness & syncope",
     "age": "79",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -4023,7 +4023,7 @@
     "description": "headache",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -4035,7 +4035,7 @@
     "description": "abdominal pain",
     "age": "22",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -4047,7 +4047,7 @@
     "description": "guest had seizure after experiencing the attraction",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4059,7 +4059,7 @@
     "description": "guest tripped and fell exiting the ride vehicle injuring her head arm and leg",
     "age": "86",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4071,7 +4071,7 @@
     "description": "guest had seizure while experiencing the attraction",
     "age": "23",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4083,7 +4083,7 @@
     "description": "guest with pre-existing medical condition had a seizure after the ride",
     "age": "9",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4095,7 +4095,7 @@
     "description": "guest fell out of raft into catch pool at the end of slide and struck his head",
     "age": "18",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4107,7 +4107,7 @@
     "description": "guest sustained fractures to arm and injuries to neck and back when arm became caught in conveyor belt during initial incline of ride",
     "age": "44",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4119,7 +4119,7 @@
     "description": "guest with pacemaker stated he felt a shock through his shoulders when fastening his restraint",
     "age": "62",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -4131,7 +4131,7 @@
     "description": "Guest with history of high blood pressure. Became ill after riding",
     "age": "63",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4143,7 +4143,7 @@
     "description": "Guest with hypertension felt ill day after riding",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -4155,7 +4155,7 @@
     "description": "Felt ill; passed away next day at hospital.",
     "age": "49",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4167,7 +4167,7 @@
     "description": "reported on 10/07/05 that had not been feeling well sinece riding attraction three days prior",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4179,7 +4179,7 @@
     "description": "chest pain.",
     "age": "42",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4191,7 +4191,7 @@
     "description": "child lost consciousness. Later died at hospital",
     "age": "4",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4203,7 +4203,7 @@
     "description": "Became dizzy and had upset stomach.",
     "age": "50",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4215,7 +4215,7 @@
     "description": "fainted while on ride",
     "age": "40",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4227,7 +4227,7 @@
     "description": "sustained nausea on ride",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4239,7 +4239,7 @@
     "description": "chest pain.",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4251,7 +4251,7 @@
     "description": "chest pain.",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4263,7 +4263,7 @@
     "description": "didnÃ¢ÂÂt feel well",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4275,7 +4275,7 @@
     "description": "Chest Pains",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4287,7 +4287,7 @@
     "description": "Nausea",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4299,7 +4299,7 @@
     "description": "guest with pre-existing condition felt ill after experiencing attraction",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4311,7 +4311,7 @@
     "description": "seizure/loss of consciousness",
     "age": "16",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4323,7 +4323,7 @@
     "description": "guest fainted after ride",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4335,7 +4335,7 @@
     "description": "guest with pre-existing health condition felt ill after exiting attraction & temporarily lost consciousness.",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4347,7 +4347,7 @@
     "description": "felt ill: chest pain",
     "age": "54",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4359,7 +4359,7 @@
     "description": "Felt ill",
     "age": "27",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4371,7 +4371,7 @@
     "description": " felt dizzy, loss of memory",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4383,7 +4383,7 @@
     "description": "loss of consciousness",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4395,7 +4395,7 @@
     "description": "guest with preexisting heart condition felt ill after riding attractions.",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4407,7 +4407,7 @@
     "description": "guest with pre-existing condition lost consciousness after experiencing the green side of the attraction",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4419,7 +4419,7 @@
     "description": "guest with pre-existing condition had a stroke after experiencing the green side of the attraction",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -4443,7 +4443,7 @@
     "description": "guest with pre-existing medical issues experienced brief loss of consciousness",
     "age": "43",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4455,7 +4455,7 @@
     "description": "guest w/ pre-existing health condition felt ill after ride; heart attack",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -4467,7 +4467,7 @@
     "description": "guest with history of vertigo felt dizzy and ill",
     "age": "53",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4479,7 +4479,7 @@
     "description": " vomiting,  vertigo and felt rapid heart rate",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4491,7 +4491,7 @@
     "description": "felt dizzy and sick",
     "age": "42",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4503,7 +4503,7 @@
     "description": "guest with pre-existing condition felt ill and passed out momentarily",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4515,7 +4515,7 @@
     "description": "chest pain",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4527,7 +4527,7 @@
     "description": "guest with pre-existing condition felt tightness in chest and nausea",
     "age": "58",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -4551,7 +4551,7 @@
     "description": "injured hip entering the attraction",
     "age": "83",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Universal",
@@ -4563,7 +4563,7 @@
     "description": "hip/pelvis pain",
     "age": "59",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -4575,7 +4575,7 @@
     "description": "Fell getting onto ride; fractured hip.",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4587,7 +4587,7 @@
     "description": "Guest tripped and fell into the ride path as he attempted to board the attraction.",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4599,7 +4599,7 @@
     "description": "Fell Ã¢ÂÂ fractured legs and arms.",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4611,7 +4611,7 @@
     "description": "guest with pre-existing medical condition had a seizure after experiencing the attraction",
     "age": "4",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4623,7 +4623,7 @@
     "description": "guest with pre-existing condition felt chest pain after riding",
     "age": "63",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -4635,7 +4635,7 @@
     "description": "fell on moving walkway in load area; fractured knee",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4647,7 +4647,7 @@
     "description": " lost balance on unload belt,  fell and hit head and fractured wrist",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4659,7 +4659,7 @@
     "description": "Seizure",
     "age": "43",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4671,7 +4671,7 @@
     "description": "lost consciousness after ride. Later passed away at hospital",
     "age": "77",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4683,7 +4683,7 @@
     "description": "guest experienced abdominal and back pain while on the attraction",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -4695,7 +4695,7 @@
     "description": "guest with pre-existing condition experienced stroke like symptoms after having been on the attraction",
     "age": "81",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -4707,7 +4707,7 @@
     "description": "guest with pre-existing condition experienced headache and brief loss of consciousness",
     "age": "76",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4719,7 +4719,7 @@
     "description": "guest recovering from throat surgery became ill",
     "age": "50",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -4731,7 +4731,7 @@
     "description": "guest fell while entering the ride",
     "age": "30",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4743,7 +4743,7 @@
     "description": "guest with pre-existing condition had a seizure after exiting.",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -4755,7 +4755,7 @@
     "description": "guest with pre-existing condition felt back pain when exiting the ride.",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -4767,7 +4767,7 @@
     "description": "lacerated tips of 2 fingers",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4779,7 +4779,7 @@
     "description": "lacerated 4 fingers",
     "age": "12",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4791,7 +4791,7 @@
     "description": " dizziness, chest pain, mouth numbness",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -4803,7 +4803,7 @@
     "description": "nausea",
     "age": "50",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -4815,7 +4815,7 @@
     "description": "shoulder pain",
     "age": "82",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -4827,7 +4827,7 @@
     "description": "temporarily lost consciousness after exiting attraction.",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -4839,7 +4839,7 @@
     "description": "guest fell stepping down from attraction",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4851,7 +4851,7 @@
     "description": "while dismounting a horse guest lost balance and fell",
     "age": "63",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4863,7 +4863,7 @@
     "description": "guest fell while exiting the attraction and fractured hip",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4875,7 +4875,7 @@
     "description": " fell while stepping off carousel horse, fractured leg",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4887,7 +4887,7 @@
     "description": "felt ill while boarding attraction; fractured hip & leg",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4899,7 +4899,7 @@
     "description": "felt ill while exiting attraction; fractured arm",
     "age": "65",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4911,7 +4911,7 @@
     "description": " fell while stepping off the carousel platform, fractured leg",
     "age": "66",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4923,7 +4923,7 @@
     "description": "fell and hit head",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -4935,7 +4935,7 @@
     "description": "guest fell and fractured hip and shoulder while ride was stopped.",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -4947,7 +4947,7 @@
     "description": "guest with pre-existing conditions (i.e. heart condition prior stroke) felt ill while riding attraction  collapsed after exiting and subsequently passed away.",
     "age": "77",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Universal",
@@ -4959,7 +4959,7 @@
     "description": "head pain",
     "age": "24",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Universal",
@@ -4971,7 +4971,7 @@
     "description": "numbness",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -4983,7 +4983,7 @@
     "description": "guest with pre-existing condition experienced stroke like symptoms after exiting the attraction",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Universal",
@@ -4995,7 +4995,7 @@
     "description": "Loss of Consciousness.",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -5007,7 +5007,7 @@
     "description": "lower back pain.",
     "age": "63",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -5019,7 +5019,7 @@
     "description": "Dizziness/Mild Chest Discomfort.",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5031,7 +5031,7 @@
     "description": "back pain",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -5043,7 +5043,7 @@
     "description": "dizziness",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5055,7 +5055,7 @@
     "description": "seizure",
     "age": "60",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -5067,7 +5067,7 @@
     "description": " chest, tightness/pressure/pain",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -5091,7 +5091,7 @@
     "description": "lowered level consciousness",
     "age": "15",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -5103,7 +5103,7 @@
     "description": "chest pain",
     "age": "18",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -5115,7 +5115,7 @@
     "description": "knee pain",
     "age": "50",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -5127,7 +5127,7 @@
     "description": "nausea lightheadedness",
     "age": "73",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5139,7 +5139,7 @@
     "description": "chest pain/nausea",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5151,7 +5151,7 @@
     "description": "Lower back vertebrae fracture",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -5163,7 +5163,7 @@
     "description": "Chest pain.",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -5175,7 +5175,7 @@
     "description": "general weakness after exiting ride.",
     "age": "70",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5199,7 +5199,7 @@
     "description": "Chest pain; diagnosed with heart attack",
     "age": "47",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5211,7 +5211,7 @@
     "description": "Headache and dizziness; transported from other park location approximately three hours after riding.",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5223,7 +5223,7 @@
     "description": "Fell while getting into vehicle; back injury",
     "age": "50",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -5235,7 +5235,7 @@
     "description": "Guest unresponsive; later passed away at hospital",
     "age": "12",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5247,7 +5247,7 @@
     "description": "guest had chest pains",
     "age": "64",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5259,7 +5259,7 @@
     "description": "shoulder and arm pain; dizziness",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5271,7 +5271,7 @@
     "description": "guest with pre-existing condition felt dizzy and faint",
     "age": "81",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5283,7 +5283,7 @@
     "description": "guest passed out and fell after exiting the attraction",
     "age": "18",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5295,7 +5295,7 @@
     "description": "guest with pre-existing condition had a seizure on the attraction",
     "age": "48",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5307,7 +5307,7 @@
     "description": "guest passed out after experiencing the attraction",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5319,7 +5319,7 @@
     "description": "severe head pain illness and vomiting after riding",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Disney World",
@@ -5331,7 +5331,7 @@
     "description": "dizziness & loss of memory after riding; later lost consciousness",
     "age": "51",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5343,7 +5343,7 @@
     "description": "Loss of consciousness on ride; regained consciousness before exiting",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5367,7 +5367,7 @@
     "description": "guest with pre-existing condition felt ill after riding attraction",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5379,7 +5379,7 @@
     "description": "guest with pre-existing condition felt ill and temporarily lost consciousness",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5391,7 +5391,7 @@
     "description": "seizure after exiting ride",
     "age": "31",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5403,7 +5403,7 @@
     "description": "chest pains and shortness of breath",
     "age": "50",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5415,7 +5415,7 @@
     "description": "feeling weak on left side and had trouble standing after riding.",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5427,7 +5427,7 @@
     "description": "Chest pains",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5439,7 +5439,7 @@
     "description": "seizure",
     "age": "25",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5451,7 +5451,7 @@
     "description": "guest reported back and leg pain and that he was lightheaded; later underwent heart surgery.",
     "age": "26",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5463,7 +5463,7 @@
     "description": "felt ill; nausea",
     "age": "50",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -5475,7 +5475,7 @@
     "description": "elbow pain",
     "age": "78",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -5487,7 +5487,7 @@
     "description": "guest felt ill after riding attraction",
     "age": "71",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5499,7 +5499,7 @@
     "description": "guest felt dizzy after having experienced the attraction",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5511,7 +5511,7 @@
     "description": "guest with pre-existing condition had a seizure",
     "age": "48",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5523,7 +5523,7 @@
     "description": "guest wilt preexisting condition felt ill after exiting",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5535,7 +5535,7 @@
     "description": "guest had a seizure after riding the attraction",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5547,7 +5547,7 @@
     "description": "guest with pre-existing condition had seizure",
     "age": "30",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5557,7 +5557,7 @@
     "Theme_Park": "Blizzard Beach",
     "age_gender": "49yom",
     "description": "felt dizzy & sick",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5569,7 +5569,7 @@
     "description": "guest exited vehicle and claims to have lost consciousness",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5581,7 +5581,7 @@
     "description": "seizure",
     "age": "6",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -5593,7 +5593,7 @@
     "description": "Guest had difficulty standing in exit area; passed away two days later due to stroke.",
     "age": "60",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -5605,7 +5605,7 @@
     "description": " tripped over guests bag, fractured leg",
     "age": "74",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -5617,7 +5617,7 @@
     "description": "chest pain",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5629,7 +5629,7 @@
     "description": " guest with pre-existing condition felt chest pain, numbness",
     "age": "89",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5639,7 +5639,7 @@
     "Theme_Park": "Epcot",
     "age_gender": "69yof",
     "description": "felt pain in side earlier in day; reported it was worse after riding.",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -5651,7 +5651,7 @@
     "description": "felt dizzy and ill, slurred speech",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5663,7 +5663,7 @@
     "description": "guest with pre-existing condition had chest pain after exiting the attraction",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5675,7 +5675,7 @@
     "description": "guest experienced stroke like symptoms while on the attraction",
     "age": "73",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -5687,7 +5687,7 @@
     "description": "guest had chest pain after experiencing the attraction",
     "age": "82",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5699,7 +5699,7 @@
     "description": "guest lost consciousness after exiting attraction subsequently diagnosed with a heart attack",
     "age": "80",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5711,7 +5711,7 @@
     "description": "Dizzy and weakness in the left side.",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5723,7 +5723,7 @@
     "description": "Guest unresponsive after riding; passed away three days later due to heart condition.",
     "age": "73",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5735,7 +5735,7 @@
     "description": " Terminally ill guest rode ride, later passed away at hospital",
     "age": "6",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5747,7 +5747,7 @@
     "description": "Chest pain.",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5759,7 +5759,7 @@
     "description": "Hip Pain.",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -5783,7 +5783,7 @@
     "description": "collapsed in queue line leading to ride. Child subsequently passed away at hospital.",
     "age": "11",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5795,7 +5795,7 @@
     "description": "memory loss",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5807,7 +5807,7 @@
     "description": "thigh pain",
     "age": "7",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -5819,7 +5819,7 @@
     "description": "guest felt ill after experiencing the attraction",
     "age": "60",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5831,7 +5831,7 @@
     "description": "guest with pre-existing medical condition experienced temporary loss of consciousness",
     "age": "89",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5843,7 +5843,7 @@
     "description": "guest became ill after riding attraction",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5855,7 +5855,7 @@
     "description": "guest was disoriented and unable to exit vehicle without assistance",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5867,7 +5867,7 @@
     "description": "guest with pre-existing condition felt disoriented and had slurred speech",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5879,7 +5879,7 @@
     "description": "guest felt dizzy and disoriented",
     "age": "17",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5891,7 +5891,7 @@
     "description": " fell entering ride vehicle,  temporary loss of consciousness, fractured leg",
     "age": "48",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5903,7 +5903,7 @@
     "description": "stomach and chest pain",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -5915,7 +5915,7 @@
     "description": " guest felt ill, dizzy and disoriented",
     "age": "46",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5927,7 +5927,7 @@
     "description": "guest temporarily lost consciousness and fell after riding attraction.",
     "age": "17",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5939,7 +5939,7 @@
     "description": " guest with pre-existing conditions exited ride,  then lost consciousness; later passed away.",
     "age": "55",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5951,7 +5951,7 @@
     "description": "felt nauseated & lethargic after exiting",
     "age": "72",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5963,7 +5963,7 @@
     "description": " chest pain, nausea and vomiting",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -5975,7 +5975,7 @@
     "description": "guest who had not been feeling well felt sick after exiting.",
     "age": "53",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -5987,7 +5987,7 @@
     "description": "guest with pre-existing condition experienced periods of unconsciousness",
     "age": "16",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -5999,7 +5999,7 @@
     "description": "nausea vomiting & neck pain; reportedly underwent surgery to the head prior to being released from hospital",
     "age": "26",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6011,7 +6011,7 @@
     "description": " dizziness,  chest pain, lower abdominal pain",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6035,7 +6035,7 @@
     "description": " loss of consciousness while on ride, pre-existing condition",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6047,7 +6047,7 @@
     "description": "Guest with preexisting health condition (asthma) temporarily lost consciousness; released",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6059,7 +6059,7 @@
     "description": "while entering ride vehicle guest fractured leg",
     "age": "49",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6071,7 +6071,7 @@
     "description": "nausea and dizziness",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6083,7 +6083,7 @@
     "description": " felt nauseous, dizzy and short of breath",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6095,7 +6095,7 @@
     "description": "guest with history of asthma came into unload area unresponsive: regained consciousness and was transported to hospital",
     "age": "12",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6107,7 +6107,7 @@
     "description": "guest came into unload area unconscious: later diagnosed with subarachnoid hemorrhage at hospital",
     "age": "48",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6119,7 +6119,7 @@
     "description": "stroke",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -6131,7 +6131,7 @@
     "description": "Felt light headed; nausea",
     "age": "75",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6143,7 +6143,7 @@
     "description": "Dizzy and disoriented",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6155,7 +6155,7 @@
     "description": "guest with pre-existing condition lost consciousness after exiting attraction",
     "age": "37",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6167,7 +6167,7 @@
     "description": "Guest visiting through wish granting Organization had seizure after riding.",
     "age": "7",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6179,7 +6179,7 @@
     "description": "fell getting off attraction reported complaints regarding shoulder and both wrists",
     "age": "65",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -6191,7 +6191,7 @@
     "description": "guest with pre-existing condition passed out after exiting the attraction; later passed away at hospital",
     "age": "58",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6203,7 +6203,7 @@
     "description": "guest passed out after exiting the attraction",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6215,7 +6215,7 @@
     "description": "fell while boarding; fractured leg",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6227,7 +6227,7 @@
     "description": " guest with pre-existing condition felt nausea,  shortness of breath and pain in jaw after riding.",
     "age": "79",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6239,7 +6239,7 @@
     "description": "felt ill and appeared incoherent",
     "age": "56",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6251,7 +6251,7 @@
     "description": "Seizure",
     "age": "55",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6263,7 +6263,7 @@
     "description": "Guest with preexisting health condition felt ill after riding",
     "age": "49",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -6275,7 +6275,7 @@
     "description": "chest pain",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6287,7 +6287,7 @@
     "description": "chest pain",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6299,7 +6299,7 @@
     "description": "Asthma Attack",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "asthma attack"
   },
   {
     "Company": "Disney World",
@@ -6311,7 +6311,7 @@
     "description": " Guest recently released from hospital for lung condition,  reported chest pains and difficulty breathing.",
     "age": "37",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6323,7 +6323,7 @@
     "description": "chest pain.",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6335,7 +6335,7 @@
     "description": "guest had a seizure after experiencing the attraction",
     "age": "39",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6347,7 +6347,7 @@
     "description": "guest experienced chest pain and shortness of breath before and after riding attraction",
     "age": "15",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6359,7 +6359,7 @@
     "description": "nausea and chest pains",
     "age": "21",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6371,7 +6371,7 @@
     "description": "Guest with prior history of anaphylactic reactions began experiencing symptoms while on the attraction.",
     "age": "29",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "short of breath"
   },
   {
     "Company": "Disney World",
@@ -6383,7 +6383,7 @@
     "description": " passed out after riding and exiting attraction,  hit head on concrete floor and fractured skull.",
     "age": "57",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6395,7 +6395,7 @@
     "description": "seizure",
     "age": "39",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6407,7 +6407,7 @@
     "description": "Fall occurred while getting into vehicles; fractured leg",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6419,7 +6419,7 @@
     "description": "chest pain",
     "age": "65",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6443,7 +6443,7 @@
     "description": "guest with pre-existing condition felt dizzy and had trouble with equilibrium",
     "age": "39",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6455,7 +6455,7 @@
     "description": "guest with pre-existing condition was ill after experiencing the attraction",
     "age": "66",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -6467,7 +6467,7 @@
     "description": "guest with pre-existing medical condition had a seizure and fell after riding",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6479,7 +6479,7 @@
     "description": "guest with pre-existing condition had chest pain after experiencing the attraction",
     "age": "78",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6491,7 +6491,7 @@
     "description": "guest with pre-existing condition had chest pain and shortness of breath after riding attraction",
     "age": "57",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6503,7 +6503,7 @@
     "description": "guest felt ill and dizzy after riding attraction",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6515,7 +6515,7 @@
     "description": "guest with preexisting heart condition felt ill after riding; later passed away",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -6527,7 +6527,7 @@
     "description": "felt ill",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -6539,7 +6539,7 @@
     "description": "seizure after exiting ride",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6551,7 +6551,7 @@
     "description": "chest pain; did not have medication with him.",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6563,7 +6563,7 @@
     "description": "guest with pre-existing health condition experienced nausea and chest pain after ride",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6575,7 +6575,7 @@
     "description": "guest with pre-existing condition had a seizure.",
     "age": "16",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6585,7 +6585,7 @@
     "Theme_Park": "Hollywood Studios",
     "age_gender": "74yom",
     "description": " felt dizzy,  later fainted and fell and struck his head",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6595,7 +6595,7 @@
     "Theme_Park": "Hollywood Studios",
     "age_gender": "54yom",
     "description": "Seizure after exiting ride.",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6607,7 +6607,7 @@
     "description": "guest with pre-existing condition felt faint after experiencing the attraction",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6619,7 +6619,7 @@
     "description": "guest experienced a cardiac event within the attraction in a holding area prior to boarding a ride vehicle",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Universal",
@@ -6631,7 +6631,7 @@
     "description": "seizure",
     "age": "37",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -6643,7 +6643,7 @@
     "description": "felt disoriented and sick after riding.",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6655,7 +6655,7 @@
     "description": "fractured ribs after collision with another guest.",
     "age": "66",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6667,7 +6667,7 @@
     "description": "fractured leg after entering catch pool",
     "age": "52",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6679,7 +6679,7 @@
     "description": "fell and fractured ankle",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6691,7 +6691,7 @@
     "description": "complained of head pain and collapsed: subsequent stroke at hospital",
     "age": "39",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -6703,7 +6703,7 @@
     "description": "guest temporarily lost consciousness while transferring from wheelchair into ride vehicle.",
     "age": "53",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6715,7 +6715,7 @@
     "description": "Breathing problems.",
     "age": "25",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "short of breath"
   },
   {
     "Company": "Disney World",
@@ -6727,7 +6727,7 @@
     "description": "fractured elbow",
     "age": "53",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6739,7 +6739,7 @@
     "description": "guest collapsed in water subsequently Passed away from heart attack",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6751,7 +6751,7 @@
     "description": "saw spots",
     "age": "48",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6763,7 +6763,7 @@
     "description": " Swallowed a lot of water, felt dizzy and shortness of breath",
     "age": "50",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -6775,7 +6775,7 @@
     "description": "Loss of consciousness.",
     "age": "58",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -6787,7 +6787,7 @@
     "description": "felt illÃ¢ÂÂ¦later passed away at hospital.",
     "age": "12",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -6799,7 +6799,7 @@
     "description": "fell and fractured wrist.",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6811,7 +6811,7 @@
     "description": "stroke (according to family)",
     "age": "46",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -6823,7 +6823,7 @@
     "description": "injured knee",
     "age": "65",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -6835,7 +6835,7 @@
     "description": "Temporarily loss of consciousness when another guest fell and knocked her down; pain in right knee/leg",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -6847,7 +6847,7 @@
     "description": "chest pain (pre-existing condition)",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -6859,7 +6859,7 @@
     "description": "fell and fractured left leg",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6871,7 +6871,7 @@
     "description": "fell and fractured left leg",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6883,7 +6883,7 @@
     "description": "fell on steps leading to catch pool fractured ankle and died of pulmonary embolism",
     "age": "31",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6895,7 +6895,7 @@
     "description": "c/o neck pain",
     "age": "16",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -6907,7 +6907,7 @@
     "description": "loss of consciousness: history of heart condition",
     "age": "77",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -6919,7 +6919,7 @@
     "description": "unresponsive",
     "age": "9",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -6931,7 +6931,7 @@
     "description": "hip/pelvis pain",
     "age": "53",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -6943,7 +6943,7 @@
     "description": "hip pain",
     "age": "51",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -6955,7 +6955,7 @@
     "description": "hip/pelvis pain",
     "age": "27",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -6967,7 +6967,7 @@
     "description": "guest fractured ankle stepping into the tube",
     "age": "43",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6979,7 +6979,7 @@
     "description": "fell while entering raft and fractured back",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -6991,7 +6991,7 @@
     "description": "Felt disoriented and lightheaded",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7003,7 +7003,7 @@
     "description": "slipped while getting into tube; fractured ankle",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -7015,7 +7015,7 @@
     "description": "lost consciousness (pre-existing condition)",
     "age": "30",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -7027,7 +7027,7 @@
     "description": "chest palpitations",
     "age": "29",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Universal",
@@ -7039,7 +7039,7 @@
     "description": "cardiac arrest",
     "age": "53",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Universal",
@@ -7051,7 +7051,7 @@
     "description": "abdominal pain",
     "age": "68",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -7063,7 +7063,7 @@
     "description": "guest with pre-existing condition experienced chest pain.",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7075,7 +7075,7 @@
     "description": "Fell getting out of vehicle and fractured pelvis.",
     "age": "67",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7087,7 +7087,7 @@
     "description": "guest with pre-existing condition experienced abdominal pain after riding the attraction",
     "age": "34",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -7099,7 +7099,7 @@
     "description": "guest with pre-existing condition became ill after riding attraction",
     "age": "64",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7111,7 +7111,7 @@
     "description": " felt dizzy and ill, nose bleed",
     "age": "63",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7123,7 +7123,7 @@
     "description": "fell while exiting vehicle and broke right wrist.",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Universal",
@@ -7135,7 +7135,7 @@
     "description": "change in mental status",
     "age": "45",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "change in mental status"
   },
   {
     "Company": "Universal",
@@ -7147,7 +7147,7 @@
     "description": "shortness of breath with associated chest pain",
     "age": "16",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -7159,7 +7159,7 @@
     "description": "Fainting",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7171,7 +7171,7 @@
     "description": "guest complained of chest pain after riding attraction",
     "age": "55",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7183,7 +7183,7 @@
     "description": "seizure like symptoms",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -7195,7 +7195,7 @@
     "description": "Nausea",
     "age": "32",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -7207,7 +7207,7 @@
     "description": "loss of consciousness.",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -7219,7 +7219,7 @@
     "description": "Seizure",
     "age": "28",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal",
@@ -7231,7 +7231,7 @@
     "description": "chest pain",
     "age": "18",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -7243,7 +7243,7 @@
     "description": "syncope",
     "age": "42",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -7255,7 +7255,7 @@
     "description": "seizure",
     "age": "14",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Universal:",
@@ -7279,7 +7279,7 @@
     "description": "chest pain",
     "age": "36",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -7291,7 +7291,7 @@
     "description": "syncope",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Universal",
@@ -7303,7 +7303,7 @@
     "description": "chest discomfort",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -7315,7 +7315,7 @@
     "description": "dizziness",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Universal",
@@ -7327,7 +7327,7 @@
     "description": "syncope",
     "age": "29",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7339,7 +7339,7 @@
     "description": "fainted and fell while on Riverboat. Hurt ankle and knee",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7363,7 +7363,7 @@
     "description": "fell & hit head.",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -7375,7 +7375,7 @@
     "description": "guest with personal illness felt weakness while on the riverboat",
     "age": "80",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7387,7 +7387,7 @@
     "description": "loss of consciousness on ride; regained consciousness and was trasnported",
     "age": "8",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7399,7 +7399,7 @@
     "description": "guest had a seizure after experiencing the attraction",
     "age": "20",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -7411,7 +7411,7 @@
     "description": "felt ill; subsequently diagnosed with heart attack",
     "age": "78",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -7423,7 +7423,7 @@
     "description": "guest fell and fractured hip while loading onto the attraction",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7435,7 +7435,7 @@
     "description": "fell and struck face while assisting family member from vehicle; facial fractures.",
     "age": "63",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7447,7 +7447,7 @@
     "description": "guest fell on mobbing walkway and injured knee",
     "age": "62",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -7459,7 +7459,7 @@
     "description": "guest fell while on moving walkway and injured her left leg.",
     "age": "76",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -7471,7 +7471,7 @@
     "description": "Fell exiting vehicle; hit head and fractured left shoulder",
     "age": "71",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7483,7 +7483,7 @@
     "description": "Fell while boarding the vehicle/back pain",
     "age": "81",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -7495,7 +7495,7 @@
     "description": "guest felt ill prior to and after experiencing the attraction",
     "age": "79",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7507,7 +7507,7 @@
     "description": "guest with pre-existing heart condition had chest pain",
     "age": "69",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7519,7 +7519,7 @@
     "description": "guest with pre-existing condition felt ill after exiting ride.",
     "age": "81",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -7531,7 +7531,7 @@
     "description": "knee pain",
     "age": "25",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Universal",
@@ -7543,7 +7543,7 @@
     "description": "headache",
     "age": "59",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -7555,7 +7555,7 @@
     "description": "chest pain",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7567,7 +7567,7 @@
     "description": "Felt Dizzy.",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7579,7 +7579,7 @@
     "description": "felt ill.",
     "age": "16",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7591,7 +7591,7 @@
     "description": "chest pains after ride",
     "age": "62",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7603,7 +7603,7 @@
     "description": "chest pain",
     "age": "45",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7615,7 +7615,7 @@
     "description": " anxiety & claustrophobia, atrial fibrilation",
     "age": "47",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -7627,7 +7627,7 @@
     "description": "guest had abdominal pain after experiencing attraction",
     "age": "38",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -7639,7 +7639,7 @@
     "description": "felt ill",
     "age": "61",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7651,7 +7651,7 @@
     "description": "guest with preexisting history felt chest pain; numbness in arm",
     "age": "18",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7663,7 +7663,7 @@
     "description": "guest with pre-existing condition experienced anxiety & numbness",
     "age": "18",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -7675,7 +7675,7 @@
     "description": "guest with pre-existing condition experienced chest pain.",
     "age": "40",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Disney World",
@@ -7687,7 +7687,7 @@
     "description": "guest felt disoriented",
     "age": "40",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7699,7 +7699,7 @@
     "description": " felt dizzy, numbness/pain in arms",
     "age": "25",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7711,7 +7711,7 @@
     "description": "Numbness in right leg",
     "age": "41",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "numbness"
   },
   {
     "Company": "Disney World",
@@ -7723,7 +7723,7 @@
     "description": "felt disoriented and dizzy",
     "age": "62",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7735,7 +7735,7 @@
     "description": " neck & head pain, diagnosed with existing brain tumor",
     "age": "32",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "head injury"
   },
   {
     "Company": "Disney World",
@@ -7747,7 +7747,7 @@
     "description": "Fell ill after riding attraction  claimed memory loss and irregular heartbeat became ill after riding.",
     "age": "77",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7759,7 +7759,7 @@
     "description": "Cervical injury after collision near end of slide",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -7771,7 +7771,7 @@
     "description": "Felt pain in abdomen and chest",
     "age": "43",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "pain"
   },
   {
     "Company": "Disney World",
@@ -7783,7 +7783,7 @@
     "description": " guest fell while exiting vehicle, fractured fibula",
     "age": "64",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7795,7 +7795,7 @@
     "description": "guest fell loading onto the attraction; multiple abrasions and contusions",
     "age": "75",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -7807,7 +7807,7 @@
     "description": "guest injured ankle attempting to step out of the vehicle.",
     "age": "64",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "injury"
   },
   {
     "Company": "Disney World",
@@ -7819,7 +7819,7 @@
     "description": "fell after exiting vehicle and fractured arm.",
     "age": "7",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7831,7 +7831,7 @@
     "description": "guest went into labor after exiting the attraction",
     "age": "27",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "labor"
   },
   {
     "Company": "Disney World",
@@ -7843,7 +7843,7 @@
     "description": "guest with preexisting condition felt ill after exiting ride.",
     "age": "67",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7855,7 +7855,7 @@
     "description": "guest with pre-existing health condition had seizure",
     "age": "32",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -7865,7 +7865,7 @@
     "Theme_Park": "Magic Kingdom",
     "age_gender": "59yom",
     "description": " felt dizzy,  tripped while exiting vehicle and injured his knee",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7877,7 +7877,7 @@
     "description": "Felt dizzy and hot; loss of consciousness",
     "age": "79",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7889,7 +7889,7 @@
     "description": " fell while exiting, fractured shoulder",
     "age": "68",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fractured body part"
   },
   {
     "Company": "Disney World",
@@ -7901,7 +7901,7 @@
     "description": "dizziness and chest pain after riding",
     "age": "80",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7913,7 +7913,7 @@
     "description": "guest with pre-existing condition felt weakness & disorientation",
     "age": "77",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7925,7 +7925,7 @@
     "description": "felt ill/lost consciousness after exiting ride.",
     "age": "73",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7937,7 +7937,7 @@
     "description": "guest with pre-existing condition experienced cardiac event",
     "age": "83",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -7949,7 +7949,7 @@
     "description": "guest loss consciousness while experiencing the attraction",
     "age": "72",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -7961,7 +7961,7 @@
     "description": "guest with pre-existing condition felt ill",
     "age": "70",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -7973,7 +7973,7 @@
     "description": "guest felt dizzy and fell exiting the attraction",
     "age": "58",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -7985,7 +7985,7 @@
     "description": "guest had a heart attack after having experienced the attraction",
     "age": "54",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "cardiac event"
   },
   {
     "Company": "Disney World",
@@ -7997,7 +7997,7 @@
     "description": "guest with preexisting heart condition fainted while boarding attraction.",
     "age": "19",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "unconsciousness"
   },
   {
     "Company": "Disney World",
@@ -8009,7 +8009,7 @@
     "description": " nausea & dizziness,  lost consciousness & subsequently passed away",
     "age": "54",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -8021,7 +8021,7 @@
     "description": "guest with pre-existing health condition fell near restrooms after exiting ride & struck his head",
     "age": "73",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "fell"
   },
   {
     "Company": "Disney World",
@@ -8033,7 +8033,7 @@
     "description": "felt ill",
     "age": "87",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Universal",
@@ -8045,7 +8045,7 @@
     "description": "chest discomfort",
     "age": "52",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "chest pain"
   },
   {
     "Company": "Universal",
@@ -8057,7 +8057,7 @@
     "description": "weakness",
     "age": "49",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -8069,7 +8069,7 @@
     "description": "guest with pre-existing condition experienced stroke like symptoms after riding the attraction",
     "age": "61",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "stroke"
   },
   {
     "Company": "Disney World",
@@ -8081,7 +8081,7 @@
     "description": "seizure",
     "age": "53",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -8093,7 +8093,7 @@
     "description": "guest with pre-existing condition had seizure after riding",
     "age": "3",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -8105,7 +8105,7 @@
     "description": "guest with pre-existing condition complained of being dizzy and light-headed after riding",
     "age": "56",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -8117,7 +8117,7 @@
     "description": "guest with pre-existing medical condition had a seizure after experiencing the attraction",
     "age": "69",
     "gender": "f",
-    "description_short": "Other"
+    "description_short": "seizure"
   },
   {
     "Company": "Disney World",
@@ -8129,7 +8129,7 @@
     "description": "felt disoriented and fell after riding",
     "age": "34",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -8141,7 +8141,7 @@
     "description": "guest felt ill and began shaking after exiting.",
     "age": "41",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   },
   {
     "Company": "Disney World",
@@ -8153,7 +8153,7 @@
     "description": "nausea and dizziness",
     "age": "71",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "dizziness"
   },
   {
     "Company": "Disney World",
@@ -8165,6 +8165,6 @@
     "description": "guest felt ill after experiencing the attraction",
     "age": "42",
     "gender": "m",
-    "description_short": "Other"
+    "description_short": "felt ill"
   }
 ]

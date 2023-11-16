@@ -18,11 +18,28 @@ const padWithZero = (num) => {
 // Function to get short description based on keywords
 const getDescriptionShort = (description) => {
 	const keywordMapping = {
-		"dizziness": ['Feeling Dizzy', 'Motion Sickness'],
-		unconsciousness: 'Unconsciousness'
-		// Add more keywords and their corresponding short descriptions as needed
+    // Setting most specific causes at the top and more general at the bottom, to get the most adequate description
+    "labor": ['Labor'],
+    "asthma attack": ['Asthma attack'],
+    "change in mental status": ['Altered mental status', 'Change in mental status'],
+    "stroke": ['Stroke'],
+    "seizure": ['Seizure'],
+		"dizziness": ['Feeling Dizzy', 'Dizziness', 'Dizzy', 'Motion Sickness', 'Nauseous', 'Nausea', 'Vertigo', 'Saw spots', 'Light headed', 'Lightheaded', 'Weakness', 'Feeling weak', 'Felt faint', 'Disorientation', 'Disoriented', 'Confusion'],
+		"unconsciousness": ['Unconsciousness', 'Unconscious', 'Loss of consciousness', 'consciousness', 'Fainted', 'Fainting', 'Syncope', 'Unresponsive', 'Incoherent', 'Memory loss', 'Passed out', 'Collapsed'],
+    "chest pain": ['Chest pain', 'Difficulty breathing', 'Trouble breathing', 'Chest discomfort', 'Tightness in chest'],
+    "cardiac event": ['Cardiac event', 'Cardiac symptoms', 'Cardiac arrest', 'Heart attack', 'Hypertension', 'Chest palpitations', 'Atrial fibrilation', 'Pacemaker'],
+    "head injury": ['Head laceration', 'Head pain', 'Head and neck pain', 'Eye discomfort', 'In eye irritation'],
+    "short of breath": ['Short of breath', 'Anaphylactic reactions', 'Breathing problems'],
+    "fractured body part": ['Fractured', 'Fractures', 'Fracture', 'Broken', 'Broke', 'Lacerated'],
+    "felt ill": ['Felt ill', 'Felt unwell', 'Not been feeling well', 'General Illness', 'Illness', 'Ill', 'Sick', 'Stomach pain', 'Headache', 'Hermatemesis', 'Not feeling well', 'DidnÃ¢ÂÂt feel well'],
+    "numbness": ['Numbness', 'Difficulty moving', 'Difficult moving'],
+    "vomiting": ['Vomiting', 'Vomited', 'Vomited'],
+    "fell": ['Fell', 'Fall'],
+    "injury": ['Injury', 'Injured', 'Laceration', 'Hit', 'Reoccurrence'],
+    "pain": ['Pain']
 	};
 
+  // Creates the short description that matches the first keyword (from top to bottom) 
 	for (const keyword in keywordMapping) {
 		if (Array.isArray(keywordMapping[keyword]) && keywordMapping[keyword].some(key => description.toLowerCase().includes(key.toLowerCase()))) {
 			return keyword;
