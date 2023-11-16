@@ -17,8 +17,7 @@
 
         //TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
 		
-        // Perform any API requests, form validation, etc.
-		// Reset form fields if needed: formData = { gender: '', age: null };
+		// TODO:Reset form fields: formData = { gender: '', age: null };
 	};
 
 	const fetchIncident = async (gender, age) => {
