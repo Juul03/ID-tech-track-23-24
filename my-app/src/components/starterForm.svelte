@@ -1,4 +1,6 @@
 <script>
+	import { fly } from 'svelte/transition';
+
 	let incidentData = [];
 
 	let formData = {
@@ -6,7 +8,7 @@
 		age: null
 	};
 
-    let mostFrequentIncident = '';
+	let mostFrequentIncident = '';
 
 	const handleSubmit = async () => {
 		console.log('Form submitted!', formData);
@@ -20,10 +22,14 @@
 
 		// Count the incident that happens the most
 		if (getIncidentsForAgeAndGender) {
-			// Count the incident types
-			const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
-            mostFrequentIncident = getMostFrequentIncident(incidentTypeCounts);
-			console.log(incidentTypeCounts);
+			if (getIncidentsForAgeAndGender.length == 0) {
+				mostFrequentIncident = 'nothing';
+			} else {
+				// Count the incident types
+				const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
+				mostFrequentIncident = getMostFrequentIncident(incidentTypeCounts);
+				console.log(incidentTypeCounts);
+			}
 		} else {
 			console.error('No incidents found for the specified criteria.');
 			// TODO:Functie als er niks gebeurt voor die persoon: NOTHING WILL HAPPEN TO YOU en confetti uiteraard
@@ -137,13 +143,28 @@
 	<button type="submit">Match my incident!</button>
 </form>
 
-<p>The most frequent incident type is: {mostFrequentIncident}</p>
+{#if mostFrequentIncident !== ''}
+	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to get {mostFrequentIncident}</p>
+{:else}
+	<p transition:fly={{ y: 50, duration: 500 }}>...</p>
+{/if}
 
 <a href="#">Explore more <span>↓</span></a>
 
 <!-- TODO: link naar volgende frame  -->
 
 <style lang="scss">
+	p {
+		color: white;
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		margin: auto;
+		text-align: center;
+		transition-duration: 1s;
+	}
 	form {
 		width: 300px;
 		height: 300px;
