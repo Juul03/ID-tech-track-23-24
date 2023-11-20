@@ -27,15 +27,13 @@
 
 <style lang="scss">
 	a {
-        margin-top:2rem;
-
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		text-decoration: none;
 		width: 100%;
-        max-width:5rem;
+        max-width:6rem;
 
 		color: var(--secundary-color);
 

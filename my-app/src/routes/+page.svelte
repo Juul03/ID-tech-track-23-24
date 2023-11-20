@@ -17,20 +17,15 @@
 	<section>
 		<StarterForm />
 	</section>
-
-
-	<Testbarchart/>
 	
-	<!-- <ScrollButton /> -->
+	<!-- <section>
+		<ScrollButton />
+	</section> -->
+
 
 	<!-- <section>
+		<Testbarchart/>
 		<Bubbleplot/>
-		<p>
-			Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
-			thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
-			World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
-			you break your leg, or get dizzy? You will find out soon!
-		</p>
 	</section> -->
 
 	
