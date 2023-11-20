@@ -124,7 +124,7 @@
 				bind:group={formData.gender}
 				checked
 			/>
-			None/Prefer not to say
+			Neither
 		</label>
 	</fieldset>
 
@@ -149,15 +149,11 @@
 	<p transition:fly={{ y: 50, duration: 500 }}>...</p>
 {/if}
 
-<a href="#">Explore more <span>↓</span></a>
-
-<!-- TODO: link naar volgende frame  -->
-
 <style lang="scss">
 	p {
 		color: white;
 		position: absolute;
-		bottom: 10%;
+		bottom: 20%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 300px;
@@ -169,15 +165,14 @@
 		width: 300px;
 		height: 300px;
 		margin: auto;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		border: 1px solid var(--accent-color);
 		border-radius: 5%;
 		padding: 20px;
 
 		background: var(--secundary-color);
+		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+
+		text-align: left;
 
 		> legend {
 			font-family: Waltograph, Verdana, Geneva, Tahoma, sans-serif;
@@ -199,11 +194,13 @@
 			> legend {
 				display: block;
 				font-weight: bold;
+				text-align:left;
 			}
 
 			> label {
 				flex: 1;
 				padding: 0.5rem 0;
+				text-align:left;
 
 				&:nth-of-child(1),
 				&:nth-of-child(2) {
@@ -221,7 +218,7 @@
 			width: 1rem; /* Customize the width and height */
 			height: 1rem;
 			border-radius: 50%; /* Make it round */
-			border: 2px solid var(--text-color); /* Add border */
+			border: 2px solid var(--primary-color-light); /* Add border */
 			outline: none;
 			cursor: pointer;
 			margin-right: 0.5rem;
@@ -229,7 +226,7 @@
 			transition: var(--standard-transition-time);
 		}
 		input[type='radio']:checked {
-			background-color: var(--text-color);
+			background-color: var(--primary-color-light);
 		}
 
 		> input[type='number'] {
@@ -240,28 +237,25 @@
 
 			border-radius: 5px;
 			background: whitesmoke;
-			border: solid 1px var(--text-color);
+			border: solid 1px var(--primary-color-light);
 
 			font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 1rem;
-			color: var(--text-color);
+			color: var(--primary-color-light);
 		}
 
 		button {
 			display: block;
-			position: absolute;
-			bottom: 10%;
-			left: 50%;
-			transform: translate(-50%, 0%);
-
-			width: 85%;
+			margin: 1rem auto;
+			width: calc(100% - 1rem);
+			max-width: 95%;
 			padding: 0.8rem;
-			background: var(--text-color);
+			background: var(--primary-color-light);
 			border-radius: 5px;
 			border: solid 1px transparent;
-
-			color: var(--primary-color);
+			color: var(--secundary-color);
 			font-family: Waltograph, Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 1rem;
 		}
 	}
 
@@ -269,6 +263,10 @@
 		form {
 			width: 75%;
 			max-width: 100%;
+
+			button {
+				bottom: 5%;
+			}
 		}
 	}
 </style>
