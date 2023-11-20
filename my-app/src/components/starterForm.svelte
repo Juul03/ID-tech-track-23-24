@@ -6,6 +6,8 @@
 		age: null
 	};
 
+    let mostFrequentIncident = '';
+
 	const handleSubmit = async () => {
 		console.log('Form submitted!', formData);
 		// Convert age to a string, because in the dataset it is a string
@@ -13,10 +15,22 @@
 		const ageString = formData.age.toString();
 
 		//TODO: When datatype of age in the dataset is parseInt, then change ageString to formData.age
-		const incidents = await fetchIncident(formData.gender, ageString);
+		// fetch incidents for the selected gender and age
+		const getIncidentsForAgeAndGender = await fetchIncident(formData.gender, ageString);
 
-        //TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
-		
+		// Count the incident that happens the most
+		if (getIncidentsForAgeAndGender) {
+			// Count the incident types
+			const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
+            mostFrequentIncident = getMostFrequentIncident(incidentTypeCounts);
+			console.log(incidentTypeCounts);
+		} else {
+			console.error('No incidents found for the specified criteria.');
+			// TODO:Functie als er niks gebeurt voor die persoon: NOTHING WILL HAPPEN TO YOU en confetti uiteraard
+		}
+
+		//TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
+
 		// TODO:Reset form fields: formData = { gender: '', age: null };
 	};
 
@@ -31,16 +45,16 @@
 					(entry) => entry.age === age && (entry.gender === 'f' || entry.gender === 'm')
 				);
 
-				// return incidentsForBothGenders;
-                console.log(incidentsForBothGenders);
+				return incidentsForBothGenders;
+				console.log(incidentsForBothGenders);
 			} else {
 				// Fetch incidents for the specified gender
 				const filteredIncidents = incidentData.filter(
 					(entry) => entry.age === age && entry.gender.toLowerCase() === gender.toLowerCase()
 				);
 
-				// return filteredIncidents;
-                console.log(filteredIncidents);
+				return filteredIncidents;
+				console.log(filteredIncidents);
 			}
 		} else {
 			console.error('Failed to fetch the data');
@@ -56,6 +70,30 @@
 			// Reset the value to the maximum allowed
 			event.target.value = maxValue;
 		}
+	};
+
+	const countIncidentTypeOccurrences = (incidents) => {
+		const incidentTypeCounts = {};
+		incidents.forEach((incident) => {
+			const incidentTypes = incident.description_short;
+			incidentTypeCounts[incidentTypes] = (incidentTypeCounts[incidentTypes] || 0) + 1;
+		});
+
+		return incidentTypeCounts;
+	};
+
+	const getMostFrequentIncident = (incidentTypeCounts) => {
+		let maxCount = 0;
+		let mostFrequent = '';
+
+		for (const incidentType in incidentTypeCounts) {
+			if (incidentTypeCounts[incidentType] > maxCount) {
+				maxCount = incidentTypeCounts[incidentType];
+				mostFrequent = incidentType;
+			}
+		}
+
+		return mostFrequent;
 	};
 </script>
 
@@ -98,6 +136,12 @@
 
 	<button type="submit">Match my incident!</button>
 </form>
+
+<p>The most frequent incident type is: {mostFrequentIncident}</p>
+
+<a href="#">Explore more <span>↓</span></a>
+
+<!-- TODO: link naar volgende frame  -->
 
 <style lang="scss">
 	form {
