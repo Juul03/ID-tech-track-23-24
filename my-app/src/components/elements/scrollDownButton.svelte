@@ -32,6 +32,16 @@
 
         &:hover {
             color: var(--accent-color);
+            transform: translateY(-10%) scale(105%);
         }
 	}
+
+    @media screen and (max-width: 500px) {
+        a {
+            background-color:var(--accent-color);
+            padding:.5rem;
+            width:20%;
+        }
+    }
 </style>
+

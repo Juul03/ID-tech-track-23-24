@@ -38,6 +38,10 @@
 		//TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
 
 		// TODO:Reset form fields: formData = { gender: '', age: null };
+		formData = {
+			gender: 'preferNotToSay',
+			age:null
+		};
 	};
 
 	const fetchIncident = async (gender, age) => {
@@ -76,6 +80,8 @@
 			// Reset the value to the maximum allowed
 			event.target.value = maxValue;
 		}
+
+		mostFrequentIncident = '';
 	};
 
 	const countIncidentTypeOccurrences = (incidents) => {
@@ -146,21 +152,10 @@
 {#if mostFrequentIncident !== ''}
 	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to get {mostFrequentIncident}</p>
 {:else}
-	<p transition:fly={{ y: 50, duration: 500 }}>...</p>
+	<p transition:fly={{ y: 50, duration: 500 }}></p>
 {/if}
 
 <style lang="scss">
-	p {
-		color: white;
-		position: absolute;
-		bottom: 20%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 300px;
-		margin: auto;
-		text-align: center;
-		transition-duration: 1s;
-	}
 	form {
 		width: 300px;
 		height: 300px;
@@ -259,7 +254,15 @@
 		}
 	}
 
-	@media screen and (max-width: 550px) {
+	p {
+		transform: translateY(50%);
+		color: white;
+		width: 50%;
+		margin: auto;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 500px) {
 		form {
 			width: 75%;
 			max-width: 100%;

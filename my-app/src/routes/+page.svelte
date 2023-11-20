@@ -34,11 +34,9 @@
     align-items: center;
 
 	> section {
-    margin-top: 20px; /* Adjust margin as needed */
+    // margin-top: 20px; /* Adjust margin as needed */
     text-align: center;
   }
   }
-
-
 
 </style>
