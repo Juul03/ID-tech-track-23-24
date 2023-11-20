@@ -173,7 +173,7 @@
 		padding: 20px;
 
 		background: var(--secundary-color);
-		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+		box-shadow: 0 4px 8px var(--primary-color-drop-shadow);
 
 		text-align: left;
 

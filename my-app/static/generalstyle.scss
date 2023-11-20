@@ -13,6 +13,7 @@
 	--secundary-color: #f3f0ca;
 	--accent-color: #e1aa74;
 	--primary-color-light: #3876bf;
+    --primary-color-drop-shadow:#3876bf50;
 
 	--standard-transition-time: 0.25s;
 }
@@ -31,11 +32,11 @@ h1,
 h2,
 h3 {
 	font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
+    color:var(--secundary-color);
 }
 
 h1 {
     font-size:2rem;
-    color:var(--secundary-color);
     margin: 2rem auto 0;
     width: 65%;
     text-align: center;

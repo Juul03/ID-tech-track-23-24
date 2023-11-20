@@ -10,14 +10,14 @@
 	};
 
 	// Function to show the link after 5 seconds
-	// onMount(() => {
-	// 	setTimeout(() => {
-	// 		const exploreLink = document.querySelector('a');
-	// 		if (exploreLink) {
-	// 			exploreLink.style.opacity = '1';
-	// 		}
-	// 	}, 5000);
-	// });
+	onMount(() => {
+		setTimeout(() => {
+			const exploreLink = document.querySelector('a');
+			if (exploreLink) {
+				exploreLink.style.opacity = '1';
+			}
+		}, 5000);
+	});
 </script>
 
 <a href="#" on:click|preventDefault={scrollToNext} role="button" aria-label="Scroll down">
@@ -37,11 +37,11 @@
 
 		color: var(--secundary-color);
 
-        // opacity: 0;
+        opacity: 0;
         transition: opacity var(--standard-transition-time), transform var(--standard-transition-time);
 
         &:hover {
-        // opacity: 1;
+        opacity: 1;
         color: var(--accent-color);
         transform: translateY(-10%) scale(1.05);
     }
