@@ -1,6 +1,8 @@
 <script>
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
+	import Bubbleplot from '../components/bubbleplot.svelte';
+	import Testbarchart from '../components/testBarchart.svelte';
 </script>
 
 <section>
@@ -15,8 +17,23 @@
 	<section>
 		<StarterForm />
 	</section>
+
+
+	<Testbarchart/>
 	
-	<ScrollButton />
+	<!-- <ScrollButton /> -->
+
+	<!-- <section>
+		<Bubbleplot/>
+		<p>
+			Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
+			thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
+			World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
+			you break your leg, or get dizzy? You will find out soon!
+		</p>
+	</section> -->
+
+	
 </section>
 
 
@@ -34,7 +51,6 @@
     align-items: center;
 
 	> section {
-    // margin-top: 20px; /* Adjust margin as needed */
     text-align: center;
   }
   }

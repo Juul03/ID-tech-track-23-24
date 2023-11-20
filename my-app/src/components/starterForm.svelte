@@ -39,8 +39,8 @@
 
 		// TODO:Reset form fields: formData = { gender: '', age: null };
 		formData = {
-			gender: 'preferNotToSay',
-			age:null
+			gender: formdata.gender,
+			age: null
 		};
 	};
 
@@ -83,6 +83,14 @@
 
 		mostFrequentIncident = '';
 	};
+
+	// Watch for changes in formData.gender
+    // Reactive statement to reset mostFrequentIncident when formData.gender changes
+    $: {
+        if (formData.gender !== 'preferNotToSay') {
+            mostFrequentIncident = '';
+        }
+    }
 
 	const countIncidentTypeOccurrences = (incidents) => {
 		const incidentTypeCounts = {};
@@ -152,7 +160,7 @@
 {#if mostFrequentIncident !== ''}
 	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to get {mostFrequentIncident}</p>
 {:else}
-	<p transition:fly={{ y: 50, duration: 500 }}></p>
+	<p transition:fly={{ y: 50, duration: 500 }} />
 {/if}
 
 <style lang="scss">
@@ -189,13 +197,13 @@
 			> legend {
 				display: block;
 				font-weight: bold;
-				text-align:left;
+				text-align: left;
 			}
 
 			> label {
 				flex: 1;
 				padding: 0.5rem 0;
-				text-align:left;
+				text-align: left;
 
 				&:nth-of-child(1),
 				&:nth-of-child(2) {

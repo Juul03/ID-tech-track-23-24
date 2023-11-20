@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from 'svelte';
+
 	let scrollToNext = (scrollEvent) => {
 		scrollEvent.preventDefault();
 		window.scrollBy({
@@ -6,6 +8,16 @@
 			behavior: 'smooth'
 		});
 	};
+
+	// Function to show the link after 5 seconds
+	// onMount(() => {
+	// 	setTimeout(() => {
+	// 		const exploreLink = document.querySelector('a');
+	// 		if (exploreLink) {
+	// 			exploreLink.style.opacity = '1';
+	// 		}
+	// 	}, 5000);
+	// });
 </script>
 
 <a href="#" on:click|preventDefault={scrollToNext} role="button" aria-label="Scroll down">
@@ -15,33 +27,33 @@
 
 <style lang="scss">
 	a {
+        margin-top:2rem;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		text-decoration: none;
-
-		position: fixed;
-		bottom: 5%;
-		left: 0;
 		width: 100%;
+        max-width:5rem;
 
-        color: var(--secundary-color);
+		color: var(--secundary-color);
 
-        transition:var(--standard-transition-time);
+        // opacity: 0;
+        transition: opacity var(--standard-transition-time), transform var(--standard-transition-time);
 
         &:hover {
-            color: var(--accent-color);
-            transform: translateY(-10%) scale(105%);
-        }
+        // opacity: 1;
+        color: var(--accent-color);
+        transform: translateY(-10%) scale(1.05);
+    }
 	}
 
-    @media screen and (max-width: 500px) {
-        a {
-            background-color:var(--accent-color);
-            padding:.5rem;
-            width:20%;
-        }
-    }
+	@media screen and (max-width: 500px) {
+		a {
+			background-color: var(--accent-color);
+			padding: 0.5rem;
+			width: 20%;
+		}
+	}
 </style>
-
