@@ -21,9 +21,9 @@
 
 
 <svelte:head>
-	<title>Barchart test</title>
-	<link rel="icon" href="/images/favicon.png" type="image/png" />
-	<link rel="stylesheet" href="generalstyle.scss" />
+    <title>Disney Incident Matcher</title>
+    <link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
+    <link rel="stylesheet" href="generalstyle.scss" />
 </svelte:head>
 
 <style lang="scss">
