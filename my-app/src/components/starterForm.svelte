@@ -85,12 +85,12 @@
 	};
 
 	// Watch for changes in formData.gender
-    // Reactive statement to reset mostFrequentIncident when formData.gender changes
-    $: {
-        if (formData.gender !== 'preferNotToSay') {
-            mostFrequentIncident = '';
-        }
-    }
+	// Reactive statement to reset mostFrequentIncident when formData.gender changes
+	$: {
+		if (formData.gender !== 'preferNotToSay') {
+			mostFrequentIncident = '';
+		}
+	}
 
 	const countIncidentTypeOccurrences = (incidents) => {
 		const incidentTypeCounts = {};
