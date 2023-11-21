@@ -22,7 +22,17 @@
 			range: {
 				min: minAge,
 				max: maxAge
-			}
+			},
+			tooltips: [
+				{
+					to: (value) => parseInt(value, 10), // Format the displayed value
+					from: (value) => parseInt(value, 10) // Format the value when set
+				},
+				{
+					to: (value) => parseInt(value, 10), // Format the displayed value
+					from: (value) => parseInt(value, 10) // Format the value when set
+				}
+			]
 		});
 
 		// Event listener for when the slider values change
@@ -96,19 +106,19 @@
 
 	let styleSlider = () => {
 		const handles = document.querySelectorAll('.noUi-handle');
-        const sliderInterval = document.querySelectorAll('.noUi-connect');
+		const sliderInterval = document.querySelectorAll('.noUi-connect');
 
 		handles.forEach((handle) => {
 			handle.style.backgroundColor = 'var(--primary-color-light';
 			handle.style.border = '2px solid var(--primary-color';
-            handle.style.borderRadius = '50%';
-            handle.style.width = '2rem';
-            handle.style.height = '2rem';
+			handle.style.borderRadius = '50%';
+			handle.style.width = '2rem';
+			handle.style.height = '2rem';
 		});
 
-        sliderInterval.forEach((slider) => {
-            slider.style.backgroundColor = 'var(--accent-color)';
-        })
+		sliderInterval.forEach((slider) => {
+			slider.style.backgroundColor = 'var(--accent-color)';
+		});
 	};
 
 	onMount(async () => {
@@ -225,7 +235,8 @@
 	// };
 </script>
 
-<h2>Second section with bubble plot</h2>
+<h2>See incidents for your age group!</h2>
+<p>Explore more types of incidents in your age group. Make the age group bigger or smaller by adjusting the slider</p>
 
 <div id="slider" on:mount={initSlider} />
 
@@ -233,9 +244,10 @@
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
-
 	#slider {
-		width: 500px;
+        margin-top: 2.5rem;
+		width: 80%;
+        max-width:800px;
 		height: 20px;
 	}
 
