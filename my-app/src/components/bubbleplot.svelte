@@ -94,11 +94,30 @@
 		}
 	};
 
+	let styleSlider = () => {
+		const handles = document.querySelectorAll('.noUi-handle');
+        const sliderInterval = document.querySelectorAll('.noUi-connect');
+
+		handles.forEach((handle) => {
+			handle.style.backgroundColor = 'var(--primary-color-light';
+			handle.style.border = '2px solid var(--primary-color';
+            handle.style.borderRadius = '50%';
+            handle.style.width = '2rem';
+            handle.style.height = '2rem';
+		});
+
+        sliderInterval.forEach((slider) => {
+            slider.style.backgroundColor = 'var(--accent-color)';
+        })
+	};
+
 	onMount(async () => {
 		logFormDataOnChange();
 		await fetchJSONData();
 		// Maak de slider met de data range uit de dataset
 		initSlider();
+		styleSlider();
+
 		// createChart();
 	});
 
@@ -216,9 +235,15 @@
 	@import '../../node_modules/nouislider/dist/nouislider.css';
 
 	#slider {
-		width: 300px;
+		width: 500px;
 		height: 20px;
 	}
 
-
+	/* Example of increased specificity */
+	#slider .noUi-target .noUi-base .noUi-origin .noUi-handle {
+		/* Your custom styles */
+		background-color: #4caf50 !important;
+		border: 2px solid #4caf50 !important;
+		/* Add more specific styles */
+	}
 </style>
