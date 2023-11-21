@@ -49,9 +49,7 @@
 
 	@media screen and (max-width: 500px) {
 		a {
-			background-color: var(--accent-color);
-			padding: 0.5rem;
-			width: 20%;
+			display:none;
 		}
 	}
 </style>

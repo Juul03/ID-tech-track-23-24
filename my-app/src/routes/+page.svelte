@@ -23,7 +23,7 @@
 	</div>
 </section>
 
-<section>
+<section id="bubbleplot">
 	<section>
 		<Bubbleplot />
 	</section>
@@ -36,6 +36,10 @@
 </svelte:head>
 
 <style lang="scss">
+
+	#bubbleplot {
+		padding-top: 2rem;
+	}
 	section:nth-of-type(1) {
 		display: flex;
 		flex-direction: column;

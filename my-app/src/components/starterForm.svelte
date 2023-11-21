@@ -1,11 +1,17 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import { formData as formDataStore, updateFormData } from '$lib/formDataStore';
 
 	let incidentData = [];
 
 	let formData = {
 		gender: 'preferNotToSay',
 		age: null
+	};
+
+	// Function to update the formData in the store
+	const updateFormDataInStore = () => {
+		updateFormData(formData);
 	};
 
 	let mostFrequentIncident = '';
@@ -36,12 +42,6 @@
 		}
 
 		//TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
-
-		// TODO:Reset form fields: formData = { gender: '', age: null };
-		formData = {
-			gender: formdata.gender,
-			age: null
-		};
 	};
 
 	const fetchIncident = async (gender, age) => {
@@ -56,7 +56,6 @@
 				);
 
 				return incidentsForBothGenders;
-				console.log(incidentsForBothGenders);
 			} else {
 				// Fetch incidents for the specified gender
 				const filteredIncidents = incidentData.filter(
@@ -64,7 +63,6 @@
 				);
 
 				return filteredIncidents;
-				console.log(filteredIncidents);
 			}
 		} else {
 			console.error('Failed to fetch the data');
@@ -74,7 +72,7 @@
 	const handleAgeInput = (event) => {
 		// TODO: set maxValue to maxValue of data, the oldest age
 		const inputValue = parseInt(event.target.value, 10);
-		const maxValue = 110;
+		const maxValue = 89;
 
 		if (inputValue > maxValue) {
 			// Reset the value to the maximum allowed
@@ -115,6 +113,9 @@
 
 		return mostFrequent;
 	};
+
+// Whenever the local formData changes, update the formData in the store
+$: updateFormDataInStore(formData);
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
@@ -148,7 +149,7 @@
 		id="age"
 		bind:value={formData.age}
 		min="0"
-		max="110"
+		max="89"
 		on:input={handleAgeInput}
 		required
 	/>
