@@ -5,6 +5,7 @@
 	import { select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
 
 	let incidentData = [];
+    let incidentTypeCounts = {};
 
 	let slider;
 
@@ -51,9 +52,7 @@
 
 			const newAge = parseInt(value.age);
 			if (!isNaN(newAge)) {
-				console.log('value.age', value.age);
 				const newInterval = [newAge - 5, newAge + 5];
-				console.log('newInterval', newInterval);
 
 				// Update the values of the slider
 				if (slider) {
@@ -61,6 +60,8 @@
 					ageInterval = newInterval; // Update the ageInterval variable
 				}
 			}
+
+            filterDataByAgeInterval();
 		});
 	};
 
@@ -69,6 +70,8 @@
 			const incidentAge = parseInt(incident.age);
 			return incidentAge >= ageInterval[0] && incidentAge <= ageInterval[1];
 		});
+
+        createChart(filteredData);
 		return filteredData;
 	};
 
@@ -138,13 +141,35 @@
 			const incidentTypes = incident.description_short;
 			incidentTypeCounts[incidentTypes] = (incidentTypeCounts[incidentTypes] || 0) + 1;
 		});
-
 		return incidentTypeCounts;
 	};
 
+    const createChart = (filteredData) => {
+        countIncidentTypeOccurrences(filteredData);
+        console.log("counts"+ incidentTypeCounts);
+
+        // TODO: update screenwidth on change
+        const screenWidth =
+			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+		// svg geeft het formaat weer van de grafiek inclusief assen, de visualisationwidth is kleiner zodat er in de svg ruimte is om deze te laten zien
+		const svgWidth = screenWidth * 0.85;
+		const svgHeight = 500;
+		const visualisationWidth = svgWidth * 0.8;
+		const visualisationHeight = svgWidth * 0.8;
+
+		const padding = { top: 20, right: 20, bottom: 10, left: 20 };
+
+		// const svg = select('svg').atrr('width', svgWidth).attr('height', svgHeight);
+		// const gCircles = select('#circles')
+		// 	.attr('width', visualisationWidth)
+		// 	.attr('height', visualisationHeight);
+        
+    }
+
 	// const createChart = () => {
 	// 	// Calculate the svgWidth as 85% of the screen width
-	// 	// TODO: update screenwidth on change
+	// 
 	// 	const screenWidth =
 	// 		window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -185,54 +210,6 @@
 	// 		.attr('fill', 'steelblue');
 	// };
 
-	// const createChart = (ageCounts) => {
-	// 	const svgWidth = 2000;
-	// 	const svgHeight = 500;
-	// 	const barsWidth = svgWidth * 0.8;
-	// 	const barsHeight = svgHeight * 0.8;
-
-	// 	const padding = { top: 20, right: 20, bottom: 10, left: 20 };
-
-	// 	const svg = select('#ageBarchart').attr('width', svgWidth).attr('height', svgHeight);
-	// 	const gBars = select('#bars').attr('width', barsWidth).attr('height', barsHeight);
-	// 	const gXAxis = select('#xAxis').attr('transform', `translate(0, ${barsHeight})`);
-	// 	const gYAxis = select('#yAxis').attr('transform', `translate(${barsWidth}, 0)`);
-
-	// 	const ages = Object.keys(ageCounts);
-	// 	const counts = Object.values(ageCounts);
-
-	// 	const xScale = scaleBand()
-	// 		.domain(ages)
-	// 		.range([padding.left, barsWidth - padding.right])
-	// 		.padding(0.1);
-	// 	const yScale = scaleLinear()
-	// 		.domain([0, Math.max(...counts)])
-	// 		.range([barsHeight - padding.bottom, padding.top]);
-
-	// 	let xAxis = axisBottom(xScale);
-	// 	select('#xAxis').call(xAxis);
-
-	// 	let yAxis = axisLeft(yScale);
-	// 	yAxis.ticks(11).tickSize(barsWidth - padding.left);
-	// 	select('#yAxis').call(yAxis);
-	// 	select('#yAxis').selectAll('.tick line').attr('stroke-dasharray', '5');
-
-	// 	gBars
-	// 		.selectAll('rect')
-	// 		.data(ages)
-	// 		.join('rect')
-	// 		.attr('x', (d) => xScale(d))
-	// 		.attr('y', (d) => yScale(ageCounts[d]))
-	// 		.attr('width', xScale.bandwidth())
-	// 		.attr('height', (d) => barsHeight - padding.bottom - yScale(ageCounts[d]))
-	// 		.attr('fill', 'steelblue');
-
-	// 	// Select and style the tick lines of the y-axis
-	// 	select('#yAxis')
-	// 		.selectAll('.tick line')
-	// 		.attr('stroke', 'lightgrey')
-	// 		.attr('stroke-dasharray', '2,2');
-	// };
 </script>
 
 <h2>See incidents for your age group!</h2>
@@ -249,13 +226,5 @@
 		width: 80%;
         max-width:800px;
 		height: 20px;
-	}
-
-	/* Example of increased specificity */
-	#slider .noUi-target .noUi-base .noUi-origin .noUi-handle {
-		/* Your custom styles */
-		background-color: #4caf50 !important;
-		border: 2px solid #4caf50 !important;
-		/* Add more specific styles */
 	}
 </style>
