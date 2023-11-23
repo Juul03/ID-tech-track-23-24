@@ -153,7 +153,7 @@
 			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 		// svg geeft het formaat weer van de grafiek inclusief assen, de visualisationwidth is kleiner zodat er in de svg ruimte is om deze te laten zien
-		const svgWidth = screenWidth * 0.85;
+		const svgWidth = screenWidth * 0.9;
 		const svgHeight = 500;
 		const visualisationWidth = svgWidth * 0.8;
 		const visualisationHeight = svgWidth * 0.8;
@@ -198,7 +198,19 @@
 			value: value
 		}));
 
-		// Create the hierarchy structure using the transformed incident data
+		const svg = d3
+			.select('svg')
+			.attr('width', svgWidth)
+			.attr('height', svgHeight)
+			.attr(
+				'viewBox',
+				`0, 20, ${visualisationWidth}, ${visualisationHeight}`
+			)
+			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
+
+		const g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
+
+        		// Create the hierarchy structure using the transformed incident data
 		const root = d3
 			.hierarchy({ children: incidentEntries })
 			.sum((d) => d.value)
@@ -214,110 +226,34 @@
 		// Generate the treemap layout based on the root hierarchy
 		treemapLayout(root);
 
-		const svg = d3
-			.select('svg')
-			.attr('width', svgWidth)
-			.attr('height', svgHeight + 20)
-			.attr(
-				'viewBox',
-				`0, -${padding.top}, ${visualisationWidth}, ${visualisationWidth + padding.top}`
-			)
-			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
-
-		const box = svg
-			.append('g')
+		const leaf = g
 			.selectAll('g')
 			.data(root.leaves())
 			.join('g')
-			.attr('transform', ({ x0, y0, x1, y1 }) => `translate(${x0},${y0})`)
-			.attr('opacity', 0.5)
-			.call((g) =>
-				g
-					.append('rect')
-					.attr('fill', colorForIncidents)
-					.attr('stroke', 'var(--primary-color)')
-					.attr('width', ({ x1, x0 }) => x1 - x0)
-					.attr('height', ({ y1, y0 }) => y1 - y0)
-			);
-
-		// Render the leaf nodes of the treemap
-		const leaf = svg
-			.append('g')
-			.selectAll('g')
-			.data(root.leaves()) // Use root.leaves() to access the leaf nodes after layout
-			.join('g')
 			.attr('transform', (d) => `translate(${d.x0},${d.y0})`);
 
-		// Generate tspans for multiple lines of text (name and value).
+		leaf
+			.append('rect')
+			.attr('fill', colorForIncidents)
+			.attr('stroke', 'var(--primary-color)')
+			.attr('width', (d) => d.x1 - d.x0)
+			.attr('height', (d) => d.y1 - d.y0)
+			.attr('rx', 5)
+			.attr('ry', 5);
+
 		leaf
 			.append('text')
-			.selectAll('tspan')
-			.data((d) => [
-				{ text: d.data.incidentType, dy: '1em' },
-				{ text: d.value, dy: '1.1em' } // Adjust dy values for spacing
-			])
-			.enter()
-			.append('tspan')
 			.attr('x', 3)
-			.attr('dy', (d) => d.dy)
-			.attr('fill-opacity', (_, i, nodes) => (i === nodes.length - 1 ? 0.7 : null))
-			.text((d) => d.text);
+			.attr('y', 13)
+			.text((d) => d.data.incidentType);
 
-		leaf.append('title').text((d) => d.data.incidentType);
-
-		// Add rectangles or other elements to represent the leaf nodes
-
-		// countIncidentTypeOccurrences(filteredData);
-		// console.log("counts"+ incidentTypeCounts);
-
-		// const svg = select('svg').atrr('width', svgWidth).attr('height', svgHeight);
-		// const gCircles = select('#circles')
-		// 	.attr('width', visualisationWidth)
-		// 	.attr('height', visualisationHeight);
+		// Additional text for values if needed
+		leaf
+			.append('text')
+			.attr('x', 3)
+			.attr('y', 26)
+			.text((d) => d.value);
 	};
-
-	// const createChart = () => {
-	// 	// Calculate the svgWidth as 85% of the screen width
-	//
-	// 	const screenWidth =
-	// 		window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-	// 	// svg geeft het formaat weer van de grafiek inclusief assen, de visualisationwidth is kleiner zodat er in de svg ruimte is om deze te laten zien
-	// 	const svgWidth = screenWidth * 0.85;
-	// 	const svgHeight = 500;
-	// 	const visualisationWidth = svgWidth * 0.8;
-	// 	const visualisationHeight = svgWidth * 0.8;
-
-	// 	const padding = { top: 20, right: 20, bottom: 10, left: 20 };
-
-	// 	const svg = select('svg').atrr('width', svgWidth).attr('height', svgHeight);
-	// 	const gCircles = select('#circles')
-	// 		.attr('width', visualisationWidth)
-	// 		.attr('height', visualisationHeight);
-	// const gXAxis = select('#xAxis').attr('transform', `translate(0, ${barsHeight})`);
-	// const gYAxis = select('#yAxis').attr('transform', `translate(${barsWidth}, 0)`);
-
-	// const amountOfIncidentTypes =
-	// const incidentCount =
-
-	// const xScale = scaleBand()
-	// 	.domain(amountOfIncidentTypes)
-	// 	.range([padding.left, visualisationWidth - padding.right])
-	// 	.padding(0.1);
-	// const yScale = scaleLinear()
-	// 	.domain([0, Math.max(...incidentCount)])
-	// 	.range([visualisationHeight - padding.bottom, padding.top]);
-
-	// 	gCircles
-	// 		.selectAll('rect')
-	// 		.data(incidentCount)
-	// 		.join('rect')
-	// 		.attr('x', (d) => xScale(d))
-	// 		.attr('y', (d) => yScale(ageCounts[d]))
-	// 		.attr('width', xScale.bandwidth())
-	// 		.attr('height', (d) => barsHeight - padding.bottom - yScale(ageCounts[d]))
-	// 		.attr('fill', 'steelblue');
-	// };
 </script>
 
 <h2>See incidents for your age group!</h2>
@@ -338,4 +274,10 @@
 		max-width: 800px;
 		height: 20px;
 	}
+
+    svg {
+        margin-top:1rem;
+        margin-bottom:5rem;
+        border: solid black 2px;
+    }
 </style>
