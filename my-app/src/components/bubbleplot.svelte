@@ -2,10 +2,14 @@
 	import { onMount } from 'svelte';
 	import { formData } from '$lib/formDataStore';
 	import noUiSlider from 'nouislider';
-	import { select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
+	// import { d3, select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
+	import * as d3 from 'd3';
 
 	let incidentData = [];
-    let incidentTypeCounts = {};
+	let allIncidentsOccurences = {};
+
+	let filteredIncidentData = [];
+	let incidentTypeCounts = {};
 
 	let slider;
 
@@ -61,18 +65,17 @@
 				}
 			}
 
-            filterDataByAgeInterval();
+			filterDataByAgeInterval();
 		});
 	};
 
 	const filterDataByAgeInterval = () => {
-		const filteredData = incidentData.filter((incident) => {
+		filteredIncidentData = incidentData.filter((incident) => {
 			const incidentAge = parseInt(incident.age);
 			return incidentAge >= ageInterval[0] && incidentAge <= ageInterval[1];
 		});
 
-        createChart(filteredData);
-		return filteredData;
+		return filteredIncidentData;
 	};
 
 	// Function to find the maximum age from incidentData
@@ -101,7 +104,9 @@
 		const response = await fetch('src/data/output.json');
 		if (response.ok) {
 			incidentData = await response.json();
+			allIncidentsOccurences = countIncidentTypeOccurrences(incidentData);
 			findMaxAge();
+			createChart();
 		} else {
 			console.error('Failed to fetch the data');
 		}
@@ -130,8 +135,6 @@
 		// Maak de slider met de data range uit de dataset
 		initSlider();
 		styleSlider();
-
-		// createChart();
 	});
 
 	// Count the amount of times 1 incident occures
@@ -144,12 +147,9 @@
 		return incidentTypeCounts;
 	};
 
-    const createChart = (filteredData) => {
-        countIncidentTypeOccurrences(filteredData);
-        console.log("counts"+ incidentTypeCounts);
-
-        // TODO: update screenwidth on change
-        const screenWidth =
+	const createChart = (filteredData) => {
+		// TODO: update screenwidth on change
+		const screenWidth =
 			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 		// svg geeft het formaat weer van de grafiek inclusief assen, de visualisationwidth is kleiner zodat er in de svg ruimte is om deze te laten zien
@@ -160,16 +160,125 @@
 
 		const padding = { top: 20, right: 20, bottom: 10, left: 20 };
 
+		// This is normally zero, but could be non-zero if this cell is
+		// re-evaluated after the animation plays.
+		const initialIndex = 0;
+
+		// Count the maximum of each incident occures
+		// Extract the values (incident counts) from the incidentData object
+		const incidentCounts = Object.values(allIncidentsOccurences);
+		// Find the maximum incident count
+		const maxTotalIncidents = Math.max(...incidentCounts);
+		console.log('MAXINCIDENT', maxTotalIncidents);
+
+		// Define a color scale using d3.scaleOrdinal()
+		const colorForIncidents = d3
+			.scaleOrdinal()
+			.domain(incidentCounts) // Set the domain to incident types
+			.range(d3.schemeCategory10); // Set the range of colors
+
+		// Example: Get color for an incident type
+		// TODO: Remove example when everything works
+		const incidentType = 'felt ill';
+		const incidentColor = colorForIncidents(incidentType);
+
+		console.log(incidentColor); // Check if incidentColor has the color for "injury"
+
+		// Construct the treemap layout.
+		const treemap = d3
+			.treemap()
+			.size([visualisationWidth, visualisationHeight])
+			.tile(d3.treemapResquarify) // to preserve orientation when animating
+			.padding((d) => (d.height === 1 ? 1 : 0)) // only pad parents of leaves
+			.round(true);
+
+		// Transform the incident data into a format suitable for the treemap layout
+		const incidentEntries = Object.entries(allIncidentsOccurences).map(([key, value]) => ({
+			incidentType: key,
+			value: value
+		}));
+
+		// Create the hierarchy structure using the transformed incident data
+		const root = d3
+			.hierarchy({ children: incidentEntries })
+			.sum((d) => d.value)
+			.sort((a, b) => b.value - a.value);
+
+		// Construct the treemap layout
+		const treemapLayout = d3
+			.treemap()
+			.size([visualisationWidth, visualisationHeight])
+			.padding(1) // Adjust padding as needed
+			.round(true);
+
+		// Generate the treemap layout based on the root hierarchy
+		treemapLayout(root);
+
+		const svg = d3
+			.select('svg')
+			.attr('width', svgWidth)
+			.attr('height', svgHeight + 20)
+			.attr(
+				'viewBox',
+				`0, -${padding.top}, ${visualisationWidth}, ${visualisationWidth + padding.top}`
+			)
+			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
+
+		const box = svg
+			.append('g')
+			.selectAll('g')
+			.data(root.leaves())
+			.join('g')
+			.attr('transform', ({ x0, y0, x1, y1 }) => `translate(${x0},${y0})`)
+			.attr('opacity', 0.5)
+			.call((g) =>
+				g
+					.append('rect')
+					.attr('fill', colorForIncidents)
+					.attr('stroke', 'var(--primary-color)')
+					.attr('width', ({ x1, x0 }) => x1 - x0)
+					.attr('height', ({ y1, y0 }) => y1 - y0)
+			);
+
+		// Render the leaf nodes of the treemap
+		const leaf = svg
+			.append('g')
+			.selectAll('g')
+			.data(root.leaves()) // Use root.leaves() to access the leaf nodes after layout
+			.join('g')
+			.attr('transform', (d) => `translate(${d.x0},${d.y0})`);
+
+		// Generate tspans for multiple lines of text (name and value).
+		leaf
+			.append('text')
+			.selectAll('tspan')
+			.data((d) => [
+				{ text: d.data.incidentType, dy: '1em' },
+				{ text: d.value, dy: '1.1em' } // Adjust dy values for spacing
+			])
+			.enter()
+			.append('tspan')
+			.attr('x', 3)
+			.attr('dy', (d) => d.dy)
+			.attr('fill-opacity', (_, i, nodes) => (i === nodes.length - 1 ? 0.7 : null))
+			.text((d) => d.text);
+
+		leaf.append('title').text((d) => d.data.incidentType);
+
+		// Add rectangles or other elements to represent the leaf nodes
+
+		// countIncidentTypeOccurrences(filteredData);
+		// console.log("counts"+ incidentTypeCounts);
+
 		// const svg = select('svg').atrr('width', svgWidth).attr('height', svgHeight);
 		// const gCircles = select('#circles')
 		// 	.attr('width', visualisationWidth)
 		// 	.attr('height', visualisationHeight);
-        
-    }
+	};
 
 	// const createChart = () => {
 	// 	// Calculate the svgWidth as 85% of the screen width
-	// 
+	//
 	// 	const screenWidth =
 	// 		window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -209,11 +318,13 @@
 	// 		.attr('height', (d) => barsHeight - padding.bottom - yScale(ageCounts[d]))
 	// 		.attr('fill', 'steelblue');
 	// };
-
 </script>
 
 <h2>See incidents for your age group!</h2>
-<p>Explore more types of incidents in your age group. Make the age group bigger or smaller by adjusting the slider</p>
+<p>
+	Explore more types of incidents in your age group. Make the age group bigger or smaller by
+	adjusting the slider
+</p>
 
 <div id="slider" on:mount={initSlider} />
 
@@ -222,9 +333,9 @@
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
 	#slider {
-        margin-top: 2.5rem;
+		margin-top: 2.5rem;
 		width: 80%;
-        max-width:800px;
+		max-width: 800px;
 		height: 20px;
 	}
 </style>
