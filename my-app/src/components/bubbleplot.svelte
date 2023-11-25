@@ -166,14 +166,10 @@
 	const updateChart = () => {
 		filteredIncidentData = filterDataByAgeInterval();
 		filteredIncidentDataOccurences = countFilteredIncidentTypeOccurrences(filteredIncidentData);
-		// console.log("FILTERED INCIDENT OCCURENCES", filteredIncidentDataOccurences)
 		createChart(filteredIncidentData);
 	};
 
 	const createChart = (filteredData) => {
-		// if (filteredData) {
-		// 	countIncidentTypeOccurrences(filteredData);
-		// }
 		const data = filteredData
 			? countFilteredIncidentTypeOccurrences(filteredData)
 			: allIncidentsOccurences;
@@ -188,7 +184,7 @@
 		const visualisationWidth = svgWidth * 0.8;
 		const visualisationHeight = svgHeight * 0.8;
 
-		const padding = { top: 20, right: 20, bottom: 10, left: 20 };
+		const padding = { top: 10, right: 10, bottom: 10, left: 10 };
 
 		// This is normally zero, but could be non-zero if this cell is
 		// re-evaluated after the animation plays.
@@ -197,10 +193,17 @@
 		// TODO: use filteredData to define the incidents
 		// Count the maximum of each incident occures
 		// Extract the values (incident counts) from the incidentData object
-		const incidentCounts = Object.values(data);
+		const incidentCounts = Object.values(allIncidentsOccurences);
 		// Find the maximum incident count
 		const maxTotalIncidents = Math.max(...incidentCounts);
 		console.log('MAXINCIDENT', maxTotalIncidents);
+
+		// Make the filtereddata in ratio with all incidents
+		const normalizedRatioData = {}; // Object to hold normalized data
+		for (const key in data) {
+			// Normalize the values based on the maximum value
+			normalizedRatioData[key] = data[key] / maxTotalIncidents;
+		}
 
 		// Define a color scale using d3.scaleOrdinal()
 		const colorForIncidents = d3
@@ -218,7 +221,7 @@
 		// Construct the treemap layout.
 		const treemap = d3
 			.treemap()
-			.size([visualisationWidth, visualisationHeight])
+			.size([visualisationWidth / maxTotalIncidents, visualisationHeight / maxTotalIncidents])
 			.tile(d3.treemapResquarify) // to preserve orientation when animating
 			.padding((d) => (d.height === 1 ? 1 : 0)) // only pad parents of leaves
 			.round(true);
@@ -233,7 +236,7 @@
 			.select('svg')
 			.attr('width', svgWidth)
 			.attr('height', svgHeight)
-			.attr('viewBox', `20, 20, ${visualisationWidth}, ${visualisationHeight}`)
+			.attr('viewBox', `10, 10, ${visualisationWidth}, ${visualisationHeight}`)
 			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
 
 		// Check if 'g' element exists within SVG
@@ -246,7 +249,6 @@
 			// If 'g' exists, clear its content before adding new content
 			g.selectAll('*').remove();
 		}
-		// const g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
 
 		// Create the hierarchy structure using the transformed incident data
 		const root = d3
@@ -258,7 +260,7 @@
 		const treemapLayout = d3
 			.treemap()
 			.size([visualisationWidth, visualisationHeight])
-			.padding(1) // Adjust padding as needed
+			.padding(2)
 			.round(true);
 
 		// Generate the treemap layout based on the root hierarchy
@@ -272,12 +274,14 @@
 
 		leaf
 			.append('rect')
-			.attr('fill', colorForIncidents)
+			.attr('fill', (d) => colorForIncidents(d.data.incidentType))
 			.attr('stroke', 'var(--primary-color)')
 			.attr('width', (d) => d.x1 - d.x0)
 			.attr('height', (d) => d.y1 - d.y0)
-			.attr('rx', 5)
-			.attr('ry', 5);
+			// .attr('width', (d) => (d.x1 - d.x0) * normalizedRatioData[d.data.incidentType])
+			// .attr('height', (d) => (d.y1 - d.y0) * normalizedRatioData[d.data.incidentType])
+			.attr('rx', '5px')
+			.attr('ry', '5px');
 
 		leaf
 			.append('text')
@@ -291,6 +295,97 @@
 			.attr('x', 3)
 			.attr('y', 26)
 			.text((d) => d.value);
+
+		leaf.on('click', function (event, d) {
+			const incidentType = d.data.incidentType;
+			const specificIncidentData = filteredData.filter(
+				(incident) => incident.description_short === incidentType
+			);
+
+			let genderCounts = {};
+
+			// Function to count male/female occurrences in specificIncidentData data
+			const countGenderOccurrence = (specificIncidentData) => {
+				genderCounts = {};
+				specificIncidentData.forEach((incident) => {
+					const genders = incident.gender;
+					genderCounts[genders] = (genderCounts[genders] || 0) + 1;
+				});
+				return genderCounts;
+			};
+
+			countGenderOccurrence(specificIncidentData);
+			console.log('count', genderCounts);
+
+			// Transform the incident data into a format suitable for the treemap layout
+			const genderCountsFormatted = Object.entries(genderCounts).map(([key, value]) => ({
+				gender: key,
+				value: value
+			}));
+
+			console.log(genderCountsFormatted);
+
+			const updatedRoot = d3
+				.hierarchy({ children: genderCountsFormatted })
+				.sum((d) => d.value)
+				.sort((a, b) => b.value - a.value);
+
+			treemapLayout(updatedRoot);
+
+			const updateTreemap = (rootData) => {
+				// Update the treemap structure based on the new data
+				const updatedLeaf = g.selectAll('g').data(rootData.leaves(), (d) => d.data.gender);
+
+				// Remove excess elements
+				updatedLeaf.exit().remove();
+
+				const enterSelection = updatedLeaf.enter().append('g');
+
+				// Update rectangles in the update selection
+				updatedLeaf
+					.select('rect')
+					.attr('width', 10)
+					.attr('height', 10)
+					.attr('rx', '5px')
+					.attr('ry', '5px');
+
+				// Append rectangles to the enter selection
+				enterSelection
+					.append('rect')
+					.attr('fill', (d) => (d.data.gender === 'f' ? 'pink' : 'lightblue'))
+					.attr('stroke', 'var(--primary-color)')
+					.attr('x', (d) => d.x0)
+					.attr('y', (d) => d.y0)
+					.attr('width', (d) => d.x1 - d.x0)
+					.attr('height', (d) => d.y1 - d.y0)
+					.attr('rx', '5px')
+					.attr('ry', '5px');
+
+				// Update text elements in the update selection
+				updatedLeaf
+					.select('text')
+					.attr('x', 3)
+					.attr('y', 13)
+					.text((d) => d.data.gender);
+
+				// Append text elements to the enter selection
+				enterSelection
+					.append('text')
+					.attr('x', (d) => d.x0 + 3)
+					.attr('y', 13)
+					.text((d) => d.data.gender);
+
+				// Additional text for values if needed
+				enterSelection
+					.append('text')
+					.attr('x', (d) => d.x0 + 3)
+					.attr('y', 26)
+					.text((d) => d.value);
+			};
+
+			// Call the update function with the updatedRoot data
+			updateTreemap(updatedRoot);
+		});
 	};
 </script>
 
