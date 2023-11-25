@@ -15,7 +15,16 @@ const svelteConfig = {
 
 const adapterConfig = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      // Inlclude the output.json file in the build
+      // If you want to include the output.json file
+      assets: ['src/data/*'],
+
+      // You can also include entire directories using glob patterns
+      // assets: ['src/data/*'],
+
+      // Ensure that the file or directory paths are correct based on your project structure
+    }),
     // Other SvelteKit adapter configurations if needed
   },
 };

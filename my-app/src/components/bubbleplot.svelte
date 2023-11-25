@@ -8,8 +8,10 @@
 	let incidentData = [];
 	let allIncidentsOccurences = {};
 
+	// The variable that contains the filtered incidentData array op basis van de user input
 	let filteredIncidentData = [];
-	let incidentTypeCounts = {};
+	let filteredIncidentDataOccurences = {};
+	// let incidentTypeCounts = {};
 
 	let slider;
 
@@ -43,7 +45,9 @@
 		// Event listener for when the slider values change
 		sliderContainer.noUiSlider.on('update', (values) => {
 			ageInterval = values.map((value) => parseInt(value, 10));
-			console.log('fullslider' + ageInterval);
+			console.log('agechange in slider' + ageInterval);
+			// Elke keer als de slider value verandert, haal dan de array met bijpassende data op en maak de chart
+			updateChart();
 		});
 	};
 
@@ -65,7 +69,7 @@
 				}
 			}
 
-			filterDataByAgeInterval();
+			updateChart();
 		});
 	};
 
@@ -101,7 +105,7 @@
 
 	// Fetch the JSON data
 	const fetchJSONData = async () => {
-		const response = await fetch('src/data/output.json');
+		const response = await fetch('/src/data/output.json');
 		if (response.ok) {
 			incidentData = await response.json();
 			allIncidentsOccurences = countIncidentTypeOccurrences(incidentData);
@@ -147,7 +151,33 @@
 		return incidentTypeCounts;
 	};
 
+	// Function to count incident type occurrences in filtered data
+	const countFilteredIncidentTypeOccurrences = (filteredData) => {
+		const typeCounts = {};
+
+		filteredData.forEach((incident) => {
+			const incidentType = incident.description_short;
+			typeCounts[incidentType] = (typeCounts[incidentType] || 0) + 1;
+		});
+		return typeCounts;
+	};
+
+	// Function to update the chart with filtered data
+	const updateChart = () => {
+		filteredIncidentData = filterDataByAgeInterval();
+		filteredIncidentDataOccurences = countFilteredIncidentTypeOccurrences(filteredIncidentData);
+		// console.log("FILTERED INCIDENT OCCURENCES", filteredIncidentDataOccurences)
+		createChart(filteredIncidentData);
+	};
+
 	const createChart = (filteredData) => {
+		// if (filteredData) {
+		// 	countIncidentTypeOccurrences(filteredData);
+		// }
+		const data = filteredData
+			? countFilteredIncidentTypeOccurrences(filteredData)
+			: allIncidentsOccurences;
+
 		// TODO: update screenwidth on change
 		const screenWidth =
 			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -156,7 +186,7 @@
 		const svgWidth = screenWidth * 0.9;
 		const svgHeight = 500;
 		const visualisationWidth = svgWidth * 0.8;
-		const visualisationHeight = svgWidth * 0.8;
+		const visualisationHeight = svgHeight * 0.8;
 
 		const padding = { top: 20, right: 20, bottom: 10, left: 20 };
 
@@ -164,9 +194,10 @@
 		// re-evaluated after the animation plays.
 		const initialIndex = 0;
 
+		// TODO: use filteredData to define the incidents
 		// Count the maximum of each incident occures
 		// Extract the values (incident counts) from the incidentData object
-		const incidentCounts = Object.values(allIncidentsOccurences);
+		const incidentCounts = Object.values(data);
 		// Find the maximum incident count
 		const maxTotalIncidents = Math.max(...incidentCounts);
 		console.log('MAXINCIDENT', maxTotalIncidents);
@@ -193,7 +224,7 @@
 			.round(true);
 
 		// Transform the incident data into a format suitable for the treemap layout
-		const incidentEntries = Object.entries(allIncidentsOccurences).map(([key, value]) => ({
+		const incidentEntries = Object.entries(data).map(([key, value]) => ({
 			incidentType: key,
 			value: value
 		}));
@@ -202,15 +233,12 @@
 			.select('svg')
 			.attr('width', svgWidth)
 			.attr('height', svgHeight)
-			.attr(
-				'viewBox',
-				`0, 20, ${visualisationWidth}, ${visualisationHeight}`
-			)
+			.attr('viewBox', `20, 20, ${visualisationWidth}, ${visualisationHeight}`)
 			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
 
 		const g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
 
-        		// Create the hierarchy structure using the transformed incident data
+		// Create the hierarchy structure using the transformed incident data
 		const root = d3
 			.hierarchy({ children: incidentEntries })
 			.sum((d) => d.value)
@@ -275,9 +303,9 @@
 		height: 20px;
 	}
 
-    svg {
-        margin-top:1rem;
-        margin-bottom:5rem;
-        border: solid black 2px;
-    }
+	svg {
+		margin-top: 1rem;
+		margin-bottom: 5rem;
+		border: solid black 2px;
+	}
 </style>
