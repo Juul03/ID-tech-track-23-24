@@ -236,7 +236,17 @@
 			.attr('viewBox', `20, 20, ${visualisationWidth}, ${visualisationHeight}`)
 			.attr('style', 'max-width: 100%; height: auto; font: 10px sans-serif; overflow: visible;');
 
-		const g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
+		// Check if 'g' element exists within SVG
+		let g = svg.select('g');
+
+		// If 'g' doesn't exist, create it
+		if (g.empty()) {
+			g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
+		} else {
+			// If 'g' exists, clear its content before adding new content
+			g.selectAll('*').remove();
+		}
+		// const g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
 
 		// Create the hierarchy structure using the transformed incident data
 		const root = d3
