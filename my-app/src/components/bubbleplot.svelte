@@ -180,9 +180,21 @@
 
 		// svg geeft het formaat weer van de grafiek inclusief assen, de visualisationwidth is kleiner zodat er in de svg ruimte is om deze te laten zien
 		const svgWidth = screenWidth * 0.9;
-		const svgHeight = 500;
+		let svgHeight = 500;
 		const visualisationWidth = svgWidth * 0.8;
 		const visualisationHeight = svgHeight * 0.8;
+
+		let handleResize = () => {
+			if (screenWidth < 500) {
+				svgHeight = svgWidth + 200;
+			} else {
+				svgHeight = svgHeight;
+			}
+		};
+
+		handleResize();
+		// Add event listener for the window resize event
+		window.addEventListener('resize', handleResize);
 
 		const padding = { top: 10, right: 10, bottom: 10, left: 10 };
 
