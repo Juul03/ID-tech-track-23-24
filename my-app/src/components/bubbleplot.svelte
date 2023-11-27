@@ -228,7 +228,7 @@
 		// Construct the treemap layout.
 		const treemap = d3
 			.treemap()
-			.size([visualisationWidth / maxTotalIncidents, visualisationHeight / maxTotalIncidents])
+			.size([visualisationWidth, visualisationHeight])
 			.tile(d3.treemapResquarify) // to preserve orientation when animating
 			.padding((d) => (d.height === 1 ? 1 : 0)) // only pad parents of leaves
 			.round(true);
@@ -257,7 +257,7 @@
 			g.selectAll('*').remove();
 		}
 
-        // TODO: change the svg width and hjeight based on the sqaure root of the incidents leafes
+		// TODO: change the svg width and hjeight based on the sqaure root of the incidents leafes
 
 		// Create the hierarchy structure using the transformed incident data
 		const root = d3
@@ -274,6 +274,37 @@
 
 		// Generate the treemap layout based on the root hierarchy
 		treemapLayout(root);
+
+		// Scale the treemap layout to fit within a centered box whose area
+		// is proportional to the total current value. This makes the areas
+		// of each state proportional for the entire animation.
+		let layout = () => {
+			const totalValue = calculateTotalValue(); // Function to calculate the total value from your data
+
+			const k = Math.sqrt(totalValue / maxTotalIncidents);
+			const tx = ((1 - k) / 2) * visualisationWidth;
+			const ty = ((1 - k) / 2) * visualisationWidth;
+
+			return treemap
+				.size([visualisationWidth * k, visualisationWidth * k])(root)
+				.each((d) => {
+					d.x0 += tx;
+					d.x1 += tx;
+					d.y0 += ty;
+					d.y1 += ty;
+				})
+				.leaves();
+		};
+
+		// Replace this function with the calculation appropriate for your data
+		let calculateTotalValue = () => {
+			// Calculate the total value based on your treemap data
+			// sum up the values of the data
+			return root.sum((d) => d.value).value;
+		};
+
+		layout();
+		console.log('layout' + layout);
 
 		const leaf = g
 			.selectAll('g')
