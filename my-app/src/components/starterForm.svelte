@@ -45,7 +45,7 @@
 	};
 
 	const fetchIncident = async (gender, age) => {
-		const response = await fetch('/src/data/output.json');
+		const response = await fetch('/data/output.json');
 		if (response.ok) {
 			incidentData = await response.json();
 
