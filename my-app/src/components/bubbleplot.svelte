@@ -270,13 +270,16 @@
 		// Make the treemapLayouor proportional
 		let layout = () => {
 			const totalFilteredIncidents = calculateTotalValue();
-            const totalIncidents = incidentData.length;
+			const totalIncidents = incidentData.length;
 
 			const k = Math.sqrt(totalFilteredIncidents / totalIncidents);
-			const tx = ((1 - k) / 2) * visualisationWidth;
-			const ty = ((1 - k) / 2) * visualisationWidth;
+			// const tx = ((1 - k) / 2) * visualisationWidth;
+			// const ty = ((1 - k) / 2) * visualisationWidth;
+			// Calculate the translation factors
+			const tx = (visualisationWidth - visualisationWidth * k) / 2;
+			const ty = (visualisationHeight - visualisationHeight * k) / 2;
 
-            console.log("calc" + visualisationWidth * k)
+			console.log('calc' + visualisationWidth * k);
 
 			return treemapLayout
 				.size([visualisationWidth * k, visualisationHeight * k])(root)
@@ -336,32 +339,52 @@
 
 			let genderCounts = {};
 
-			// Function to count male/female occurrences in specificIncidentData data
+			// // Function to count male/female occurrences in specificIncidentData data
+			// const countGenderOccurrence = (specificIncidentData) => {
+			// 	genderCounts = {};
+			// 	specificIncidentData.forEach((incident) => {
+			// 		const genders = incident.gender;
+			// 		genderCounts[genders] = (genderCounts[genders] || 0) + 1;
+			// 	});
+			// 	return genderCounts;
+			// };
+
 			const countGenderOccurrence = (specificIncidentData) => {
 				genderCounts = {};
 				specificIncidentData.forEach((incident) => {
-					const genders = incident.gender;
-					genderCounts[genders] = (genderCounts[genders] || 0) + 1;
+					const description = incident.description;
+					genderCounts[description] = (genderCounts[description] || 0) + 1;
 				});
 				return genderCounts;
 			};
 
 			countGenderOccurrence(specificIncidentData);
-			console.log('count', genderCounts);
+
+			console.log('Data on clicked', specificIncidentData);
+
+			const genderCountsFormatted = specificIncidentData.map((incident) => {
+				const { description, gender } = incident;
+				return { description, gender, value: 1 };
+			});
+
+			// Calculate the size of the parent leaf that is clicked
+			const parentLeafWidth = d.x1 - d.x0;
+			const parentLeafHeight = d.y1 - d.y0;
 
 			// Transform the incident data into a format suitable for the treemap layout
-			const genderCountsFormatted = Object.entries(genderCounts).map(([key, value]) => ({
-				gender: key,
-				value: value
-			}));
+			// const genderCountsFormatted = Object.entries(genderCounts).map(([key, value]) => ({
+			// 	gender: key,
+			// 	value: value
+			// }));
 
-			console.log(genderCountsFormatted);
+			console.log('FORMATTED', genderCountsFormatted);
 
 			const updatedRoot = d3
 				.hierarchy({ children: genderCountsFormatted })
 				.sum((d) => d.value)
 				.sort((a, b) => b.value - a.value);
-
+                
+            treemapLayout.size([parentLeafWidth, parentLeafHeight]);
 			treemapLayout(updatedRoot);
 
 			const updateTreemap = (rootData) => {
@@ -393,26 +416,26 @@
 					.attr('rx', '5px')
 					.attr('ry', '5px');
 
-				// Update text elements in the update selection
-				updatedLeaf
-					.select('text')
-					.attr('x', 3)
-					.attr('y', 13)
-					.text((d) => d.data.gender);
+				// // Update text elements in the update selection
+				// updatedLeaf
+				// 	.select('text')
+				// 	.attr('x', (d) => d.x0)
+				// 	.attr('y', (d) => d.y0)
+				// 	.text((d) => d.data.gender);
 
 				// Append text elements to the enter selection
-				enterSelection
-					.append('text')
-					.attr('x', (d) => d.x0 + 3)
-					.attr('y', 13)
-					.text((d) => d.data.gender);
+				// enterSelection
+				// 	.append('text')
+				// 	.attr('x', (d) => d.x0 + 3)
+				// 	.attr('y', 13)
+				// 	.text((d) => d.data.gender);
 
 				// Additional text for values if needed
-				enterSelection
-					.append('text')
-					.attr('x', (d) => d.x0 + 3)
-					.attr('y', 26)
-					.text((d) => d.value);
+				// enterSelection
+				// 	.append('text')
+				// 	.attr('x', (d) => d.x0 + 3)
+				// 	.attr('y', 26)
+				// 	.text((d) => d.value);
 			};
 
 			// Call the update function with the updatedRoot data
