@@ -198,11 +198,6 @@
 
 		const padding = { top: 10, right: 10, bottom: 10, left: 10 };
 
-		// This is normally zero, but could be non-zero if this cell is
-		// re-evaluated after the animation plays.
-		const initialIndex = 0;
-
-		// TODO: use filteredData to define the incidents
 		// Count the maximum of each incident occures
 		// Extract the values (incident counts) from the incidentData object
 		const incidentCounts = Object.values(allIncidentsOccurences);
@@ -261,6 +256,8 @@
 			// If 'g' exists, clear its content before adding new content
 			g.selectAll('*').remove();
 		}
+
+        // TODO: change the svg width and hjeight based on the sqaure root of the incidents leafes
 
 		// Create the hierarchy structure using the transformed incident data
 		const root = d3

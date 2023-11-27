@@ -161,7 +161,7 @@ $: updateFormDataInStore(formData);
 {#if mostFrequentIncident !== ''}
 	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to get {mostFrequentIncident}</p>
 {:else}
-	<p transition:fly={{ y: 50, duration: 500 }} />
+	<p transition:fly={{ y: 50, duration: 500 }}></p> 
 {/if}
 
 <style lang="scss">
@@ -288,7 +288,7 @@ $: updateFormDataInStore(formData);
 	}
 
 	p {
-		transform: translateY(50%);
+		transform: translateY(100%);
 		color: white;
 		width: 50%;
 		margin: auto;

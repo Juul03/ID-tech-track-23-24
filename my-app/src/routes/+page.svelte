@@ -23,7 +23,7 @@
 	</div>
 </section>
 
-<section id="bubbleplot">
+<section id="bubbleplot" class="spacer">
 	<section>
 		<Bubbleplot />
 	</section>
@@ -51,14 +51,11 @@
 	}
 
 	.viewportscroll {
-		position: absolute; /* Set the ScrollButton position to absolute */
-        bottom: 20px; /* Adjust the distance from the bottom */
-        left: 50%; /* Center horizontally */
-        transform: translateX(-50%);
+		margin:5%;
 	}
 
 	/* Add spacing to push Bubbleplot section to the second viewport */
 	.spacer {
-		height: 100vh; /* Adjust height as needed */
+		min-height: 100vh; /* Adjust height as needed */
 	}
 </style>
