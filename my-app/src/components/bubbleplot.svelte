@@ -225,14 +225,6 @@
 
 		console.log(incidentColor); // Check if incidentColor has the color for "injury"
 
-		// Construct the treemap layout.
-		const treemap = d3
-			.treemap()
-			.size([visualisationWidth, visualisationHeight])
-			.tile(d3.treemapResquarify) // to preserve orientation when animating
-			.padding((d) => (d.height === 1 ? 1 : 0)) // only pad parents of leaves
-			.round(true);
-
 		// Transform the incident data into a format suitable for the treemap layout
 		const incidentEntries = Object.entries(data).map(([key, value]) => ({
 			incidentType: key,
@@ -275,18 +267,19 @@
 		// Generate the treemap layout based on the root hierarchy
 		treemapLayout(root);
 
-		// Scale the treemap layout to fit within a centered box whose area
-		// is proportional to the total current value. This makes the areas
-		// of each state proportional for the entire animation.
+		// Make the treemapLayouor proportional
 		let layout = () => {
-			const totalValue = calculateTotalValue(); // Function to calculate the total value from your data
+			const totalFilteredIncidents = calculateTotalValue();
+            const totalIncidents = incidentData.length;
 
-			const k = Math.sqrt(totalValue / maxTotalIncidents);
+			const k = Math.sqrt(totalFilteredIncidents / totalIncidents);
 			const tx = ((1 - k) / 2) * visualisationWidth;
 			const ty = ((1 - k) / 2) * visualisationWidth;
 
-			return treemap
-				.size([visualisationWidth * k, visualisationWidth * k])(root)
+            console.log("calc" + visualisationWidth * k)
+
+			return treemapLayout
+				.size([visualisationWidth * k, visualisationHeight * k])(root)
 				.each((d) => {
 					d.x0 += tx;
 					d.x1 += tx;
@@ -304,7 +297,6 @@
 		};
 
 		layout();
-		console.log('layout' + layout);
 
 		const leaf = g
 			.selectAll('g')
