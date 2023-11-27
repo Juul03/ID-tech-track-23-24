@@ -85,7 +85,7 @@ csvtojson()
 		});
 
 		// Save the JSON data to a file
-		writeFile('src/data/output.json', JSON.stringify(formattedJSON, null, 2))
+		writeFile('static/data/output.json', JSON.stringify(formattedJSON, null, 2))
 			.then(() => {
 				console.log('Conversion completed. JSON data saved to output.json');
 			})
