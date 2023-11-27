@@ -367,9 +367,12 @@
 				return { description, gender, value: 1 };
 			});
 
-			// Calculate the size of the parent leaf that is clicked
+			// Calculate the size and position of the parent leaf that is clicked
 			const parentLeafWidth = d.x1 - d.x0;
 			const parentLeafHeight = d.y1 - d.y0;
+
+			const parentLeafX0 = d.x0;
+			const parentLeafY0 = d.y0;
 
 			// Transform the incident data into a format suitable for the treemap layout
 			// const genderCountsFormatted = Object.entries(genderCounts).map(([key, value]) => ({
@@ -383,8 +386,8 @@
 				.hierarchy({ children: genderCountsFormatted })
 				.sum((d) => d.value)
 				.sort((a, b) => b.value - a.value);
-                
-            treemapLayout.size([parentLeafWidth, parentLeafHeight]);
+
+			treemapLayout.size([parentLeafWidth, parentLeafHeight]);
 			treemapLayout(updatedRoot);
 
 			const updateTreemap = (rootData) => {
@@ -399,18 +402,18 @@
 				// Update rectangles in the update selection
 				updatedLeaf
 					.select('rect')
-					.attr('width', 10)
-					.attr('height', 10)
-					.attr('rx', '5px')
-					.attr('ry', '5px');
+					.attr('x', (d) => parentLeafX0 + d.x0)
+					.attr('y', (d) => parentLeafY0 + d.y0)
+					.attr('width', (d) => d.x1 - d.x0)
+					.attr('height', (d) => d.y1 - d.y0);
 
 				// Append rectangles to the enter selection
 				enterSelection
 					.append('rect')
 					.attr('fill', (d) => (d.data.gender === 'f' ? 'pink' : 'lightblue'))
 					.attr('stroke', 'var(--primary-color)')
-					.attr('x', (d) => d.x0)
-					.attr('y', (d) => d.y0)
+                    .attr('x', (d) => parentLeafX0 + d.x0)
+					.attr('y', (d) => parentLeafY0 + d.y0)
 					.attr('width', (d) => d.x1 - d.x0)
 					.attr('height', (d) => d.y1 - d.y0)
 					.attr('rx', '5px')
