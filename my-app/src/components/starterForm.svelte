@@ -205,6 +205,15 @@ $: updateFormDataInStore(formData);
 				flex: 1;
 				padding: 0.5rem 0;
 				text-align: left;
+				color:var(--primary-color);
+
+				transition: var(--standard-transition-time);
+
+				&:hover {
+				color:var(--primary-color-light);
+				font-weight:bold;
+				transform: scale(1.025);
+			}
 
 				&:nth-of-child(1),
 				&:nth-of-child(2) {
@@ -219,15 +228,20 @@ $: updateFormDataInStore(formData);
 			appearance: none;
 			-webkit-appearance: none;
 			-moz-appearance: none;
-			width: 1rem; /* Customize the width and height */
+			width: 1rem;
 			height: 1rem;
-			border-radius: 50%; /* Make it round */
-			border: 2px solid var(--primary-color-light); /* Add border */
+			border-radius: 50%;
+			border: 2px solid var(--primary-color-light);
 			outline: none;
 			cursor: pointer;
 			margin-right: 0.5rem;
 
 			transition: var(--standard-transition-time);
+
+			&:hover {
+				background: var(--primary-color-light);
+			}
+
 		}
 		input[type='radio']:checked {
 			background-color: var(--primary-color-light);
@@ -260,6 +274,16 @@ $: updateFormDataInStore(formData);
 			color: var(--secundary-color);
 			font-family: Waltograph, Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 1rem;
+
+			transition: ease-in-out var(--standard-transition-time);
+
+			&:hover {
+				background:var(--secundary-color);
+				color: var(--primary-color-light);
+				border: solid 1px var(--primary-color);
+				transform: scale(1.025);
+
+			}
 		}
 	}
 
