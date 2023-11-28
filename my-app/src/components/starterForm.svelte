@@ -34,7 +34,6 @@
 				// Count the incident types
 				const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
 				mostFrequentIncident = getMostFrequentIncident(incidentTypeCounts);
-				console.log(incidentTypeCounts);
 			}
 		} else {
 			console.error('No incidents found for the specified criteria.');

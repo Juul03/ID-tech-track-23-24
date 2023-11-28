@@ -9,7 +9,6 @@
 
 	// The variable that contains the filtered incidentData array op basis van de user input
 	let filteredIncidentData = [];
-	let filteredIncidentDataOccurences = [];
 
 	let slider;
 
@@ -17,9 +16,15 @@
 	let maxAge = 100;
 	let ageInterval = [minAge, maxAge];
 
-
 	const initSlider = () => {
-		const sliderContainer = document.getElementById('slider');
+		let sliderContainer = document.getElementById('slider');
+
+		// Check if slider container doesn't exist, then create it
+		if (!sliderContainer) {
+			sliderContainer = document.createElement('div');
+			sliderContainer.id = 'slider';
+			document.getElementById('slider-container').appendChild(sliderContainer);
+		}
 
 		slider = noUiSlider.create(sliderContainer, {
 			start: ageInterval,
@@ -41,21 +46,17 @@
 		});
 
 		// Event listener for when the slider values change
-		sliderContainer.noUiSlider.on('update', (values) => {
+		slider.on('update', (values) => {
 			ageInterval = values.map((value) => parseInt(value, 10));
-			console.log('agechange in slider' + ageInterval);
-			// Elke keer als de slider value verandert, haal dan de array met bijpassende data op en maak de chart
+			// Whenever the slider value changes, update the chart with the corresponding data
 			updateChart();
 		});
 	};
 
-	// Function to log formData whenever it changes
-	// TODO: use later to update the slider + chart on input change
-	const logFormDataOnChange = () => {
+	// Function to adjust the slider interval whenever the formdata input changes
+	const adjustSliderOnChange = () => {
 		// Subscribe to changes in the formData store
 		formData.subscribe((value) => {
-			console.log('formData changed:', value);
-
 			const newAge = parseInt(value.age);
 			if (!isNaN(newAge)) {
 				const newInterval = [newAge - 5, newAge + 5];
@@ -74,7 +75,7 @@
 	const filterDataByAgeInterval = () => {
 		filteredIncidentData = incidentData.filter((incident) => {
 			const incidentAge = parseInt(incident.age);
-			return incidentAge >= ageInterval[0] && incidentAge <= ageInterval[1];
+			return !isNaN(incidentAge) && incidentAge >= ageInterval[0] && incidentAge <= ageInterval[1];
 		});
 
 		return filteredIncidentData;
@@ -92,7 +93,6 @@
 
 		if (validAges.length > 0) {
 			maxAge = Math.max(...validAges); // Update maxAge with the calculated value
-			console.log('Maximum age:', maxAge);
 			ageInterval[1] = maxAge;
 		} else {
 			console.error('No valid ages found in the dataset');
@@ -103,14 +103,18 @@
 
 	// Fetch the JSON data
 	const fetchJSONData = async () => {
-		const response = await fetch('/data/output.json');
-		if (response.ok) {
-			incidentData = await response.json();
-			allIncidentsOccurences = countIncidentTypeOccurrences(incidentData);
-			findMaxAge();
-			createChart();
-		} else {
-			console.error('Failed to fetch the data');
+		try {
+			const response = await fetch('/data/output.json');
+			if (response.ok) {
+				incidentData = await response.json();
+				allIncidentsOccurences = countIncidentTypeOccurrences(incidentData);
+				findMaxAge();
+				createChart();
+			} else {
+				console.error('Failed to fetch the data');
+			}
+		} catch (error) {
+			console.error('Error fetching data:', error);
 		}
 	};
 
@@ -132,7 +136,7 @@
 	};
 
 	onMount(async () => {
-		logFormDataOnChange();
+		adjustSliderOnChange();
 		await fetchJSONData();
 		// Maak de slider met de data range uit de dataset
 		initSlider();
@@ -142,7 +146,7 @@
 	// Count the amount of times 1 incident occures
 	const countIncidentTypeOccurrences = (incidents) => {
 		const incidentTypeCounts = {};
-        
+
 		incidents.forEach((incident) => {
 			const incidentTypes = incident.description_short;
 			incidentTypeCounts[incidentTypes] = (incidentTypeCounts[incidentTypes] || 0) + 1;
@@ -150,27 +154,15 @@
 		return incidentTypeCounts;
 	};
 
-	// Function to count incident type occurrences in filtered data
-	const countFilteredIncidentTypeOccurrences = (filteredData) => {
-		const typeCounts = {};
-
-		filteredData.forEach((incident) => {
-			const incidentType = incident.description_short;
-			typeCounts[incidentType] = (typeCounts[incidentType] || 0) + 1;
-		});
-		return typeCounts;
-	};
-
 	// Function to update the chart with filtered data
 	const updateChart = () => {
 		filteredIncidentData = filterDataByAgeInterval();
-		filteredIncidentDataOccurences = countFilteredIncidentTypeOccurrences(filteredIncidentData);
 		createChart(filteredIncidentData);
 	};
 
 	const createChart = (filteredData) => {
 		const data = filteredData
-			? countFilteredIncidentTypeOccurrences(filteredData)
+			? countIncidentTypeOccurrences(filteredData)
 			: allIncidentsOccurences;
 
 		// TODO: update screenwidth on change
@@ -206,7 +198,7 @@
 		const colorForIncidents = d3
 			.scaleOrdinal()
 			.domain(incidentCounts)
-			.range(d3.schemeCategory10.map(d => d3.interpolateRgb(d, "white")(0.5)));
+			.range(d3.schemeCategory10.map((d) => d3.interpolateRgb(d, 'white')(0.5)));
 
 		// Transform the incident data into a format suitable for the treemap layout
 		const incidentEntries = Object.entries(data).map(([key, value]) => ({
@@ -258,8 +250,6 @@
 			const tx = (visualisationWidth - visualisationWidth * k) / 2;
 			const ty = (visualisationHeight - visualisationHeight * k) / 2;
 
-			console.log('calc' + visualisationWidth * k);
-
 			return treemapLayout
 				.size([visualisationWidth * k, visualisationHeight * k])(root)
 				.each((d) => {
@@ -271,7 +261,7 @@
 				.leaves();
 		};
 
-        // Calculates the total value based on treemap data
+		// Calculates the total value based on treemap data
 		let calculateTotalValue = () => {
 			// sum up the values of the data
 			return root.sum((d) => d.value).value;
@@ -292,7 +282,7 @@
 			.attr('width', (d) => d.x1 - d.x0)
 			.attr('height', (d) => d.y1 - d.y0)
 			.attr('rx', '5px')
-			.attr('ry', '5px')
+			.attr('ry', '5px');
 
 		leaf
 			.append('text')
@@ -323,8 +313,6 @@
 
 			const parentLeafX0 = d.x0;
 			const parentLeafY0 = d.y0;
-
-			console.log('FORMATTED', genderCountsFormatted);
 
 			const updatedRoot = d3
 				.hierarchy({ children: genderCountsFormatted })
@@ -378,11 +366,10 @@
 	adjusting the slider
 </p>
 
-<div id="slider" on:mount={initSlider} />
+<div id="slider" />
 
 <svg>
 	<div class="tooltip" />
-
 </svg>
 
 <!-- <svg /> -->
@@ -399,6 +386,7 @@
 	svg {
 		margin-top: 1rem;
 		margin-bottom: 5rem;
-		border: solid black 2px;
+		border: solid var(--primary-color-light) 2px;
+		border-radius: 10px;
 	}
 </style>

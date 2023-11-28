@@ -1,8 +1,7 @@
 <script>
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
-	import Bubbleplot from '../components/bubbleplot.svelte';
-	import Testbarchart from '../components/testBarchart.svelte';
+	import Treemap from '../components/Treemap.svelte';
 </script>
 
 <section class="spacer">
@@ -25,7 +24,7 @@
 
 <section id="bubbleplot" class="spacer">
 	<section>
-		<Bubbleplot />
+		<Treemap />
 	</section>
 </section>
 
