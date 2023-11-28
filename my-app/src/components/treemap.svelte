@@ -165,7 +165,6 @@
 			? countIncidentTypeOccurrences(filteredData)
 			: allIncidentsOccurences;
 
-		// TODO: update screenwidth on change
 		const screenWidth =
 			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -296,7 +295,7 @@
 			.attr('y', 26)
 			.text((d) => d.value);
 
-		leaf.on('click', function (event, d) {
+		leaf.on('click', (event, d) => {
 			const incidentType = d.data.incidentType;
 			const specificIncidentData = filteredData.filter(
 				(incident) => incident.description_short === incidentType
@@ -350,8 +349,7 @@
 					.attr('height', (d) => d.y1 - d.y0)
 					.attr('rx', '5px')
 					.attr('ry', '5px')
-					.style('stroke', 'transparent')
-					.style('opacity', 0.9);
+					.style('stroke', 'transparent');
 			};
 
 			// Call the update function with the updatedRoot data
@@ -371,8 +369,6 @@
 <svg>
 	<div class="tooltip" />
 </svg>
-
-<!-- <svg /> -->
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
