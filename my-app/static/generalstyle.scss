@@ -1,39 +1,64 @@
 @font-face {
-    font-family: 'Waltograph';
-    src: url('/fonts/Waltograph/waltographUI.ttf') format('truetype');
+	font-family: 'Waltograph';
+	src: url('/fonts/Waltograph/waltographUI.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 :root {
-    --primary-color:#192655;
-    --secundary-color:#F3F0CA;
-    --accent-color:#E1AA74;
-    --text-color:#3876BF;
+	--primary-color: #192655;
+	--secundary-color: #f3f0ca;
+	--accent-color: #e1aa74;
+	--primary-color-light: #3876bf;
+    --primary-color-drop-shadow:#3876bf50;
 
-    --standard-transition-time:.25s;
+	--standard-transition-time: 0.25s;
 }
 
 body {
-    background:var(--primary-color);
-
-    h1 {
-        color:red;
-    }
+	background: var(--primary-color);
 }
 
 * {
-    margin:0;
-    padding:0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
+h1,
+h2,
+h3 {
+	font-family: 'Waltograph', Verdana, Geneva, Tahoma, sans-serif;
+    color:var(--secundary-color);
+}
+
+h1 {
+    font-size:2rem;
+    margin: 2rem auto 0;
+    width: 65%;
+    text-align: center;
+}
+
+h2 {
+    text-align:center;
 }
 
 p {
-    color: green;
+    color:var(--secundary-color);
+    width: 50%;
+    max-width: 35rem;
+    margin: 2rem auto;
+    text-align: center;
+}
 
-    >a {
-        background:purple;
-    }
+fieldset> legend, form > label {
+	font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+input {
+    color: var(--primary-color-light)
 }
