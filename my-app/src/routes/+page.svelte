@@ -1,7 +1,7 @@
 <script>
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
-	import Treemap from '../components/Treemap.svelte';
+	import Treemap from '../components/treemap.svelte';
 </script>
 
 <section class="spacer">
@@ -22,7 +22,7 @@
 	</div>
 </section>
 
-<section id="bubbleplot" class="spacer">
+<section id="treemap" class="spacer">
 	<section>
 		<Treemap />
 	</section>
@@ -36,7 +36,7 @@
 
 <style lang="scss">
 
-	#bubbleplot {
+	#treemap {
 		padding-top: 2rem;
 	}
 	section:nth-of-type(1) {
@@ -53,7 +53,6 @@
 		margin:5%;
 	}
 
-	/* Add spacing to push Bubbleplot section to the second viewport */
 	.spacer {
 		min-height: 100vh; /* Adjust height as needed */
 	}
