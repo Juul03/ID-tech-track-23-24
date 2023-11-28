@@ -3,39 +3,39 @@
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
 	import Treemap from '../components/treemap.svelte';
 </script>
-	<!-- Your page content goes here -->
-	<section class="spacer">
-		<h1>Disney World Incident Matcher</h1>
-		<p>
-			Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
-			thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
-			World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
-			you break your leg, or get dizzy? You will find out soon!
-		</p>
-	
-		<section>
-			<StarterForm />
-		</section>
-	
-		<div class="viewportscroll">
-			<ScrollButton />
-		</div>
+
+<!-- Your page content goes here -->
+<section class="spacer">
+	<h1>Disney World Incident Matcher</h1>
+	<p>
+		Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
+		thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
+		World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
+		you break your leg, or get dizzy? You will find out soon!
+	</p>
+
+	<section>
+		<StarterForm />
 	</section>
-	
-	<section id="treemap" class="spacer">
-		<section>
-			<Treemap />
-		</section>
+
+	<div class="viewportscroll">
+		<ScrollButton />
+	</div>
+</section>
+
+<section id="treemap" class="spacer">
+	<section>
+		<Treemap />
 	</section>
+</section>
 
 <svelte:head>
 	<title>Disney Incident Matcher</title>
 	<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
-	
 </svelte:head>
 
 <style lang="scss">
-
+	@import '../../static/generalstyle.scss';
 	#treemap {
 		padding-top: 2rem;
 	}
@@ -50,7 +50,7 @@
 	}
 
 	.viewportscroll {
-		margin:5%;
+		margin: 5%;
 	}
 
 	.spacer {
