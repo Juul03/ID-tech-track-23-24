@@ -372,7 +372,7 @@
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
-	@import '../../static/generalstyle.scss';
+	@import '../../static/styles/generalstyle.scss';
 	#slider {
 		margin-top: 2.5rem;
 		width: 80%;
