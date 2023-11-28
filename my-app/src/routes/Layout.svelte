@@ -1,5 +1,5 @@
 <style lang="scss">
-    @import 'path/to/generalstyle.scss';
+    @import '../../static/generalstyle.scss';
 </style>
   
 <slot></slot>

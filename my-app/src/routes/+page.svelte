@@ -2,7 +2,7 @@
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
 	import Treemap from '../components/treemap.svelte';
-	import Layout from '$routes/Layout.svelte';
+	import Layout from './Layout.svelte';
 
 </script>
 
