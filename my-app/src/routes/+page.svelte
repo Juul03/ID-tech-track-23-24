@@ -2,37 +2,42 @@
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
 	import Treemap from '../components/treemap.svelte';
+	import Layout from '$routes/Layout.svelte';
+
 </script>
 
-<section class="spacer">
-	<h1>Disney World Incident Matcher</h1>
-	<p>
-		Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
-		thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
-		World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
-		you break your leg, or get dizzy? You will find out soon!
-	</p>
-
-	<section>
-		<StarterForm />
+<Layout>
+	<!-- Your page content goes here -->
+	<section class="spacer">
+		<h1>Disney World Incident Matcher</h1>
+		<p>
+			Hey there, adventurers! Brace yourselves for the Disney scoop beyond the usual fun! Discover the
+			thrilling incident waiting just for you! We've checked out all the exciting happenings at Disney
+			World/Universal Studios Orlando (Florida) from 2002 to 2022 to find your perfect match! So, will
+			you break your leg, or get dizzy? You will find out soon!
+		</p>
+	
+		<section>
+			<StarterForm />
+		</section>
+	
+		<div class="viewportscroll">
+			<ScrollButton />
+		</div>
 	</section>
-
-	<div class="viewportscroll">
-		<ScrollButton />
-	</div>
-</section>
-
-<section id="treemap" class="spacer">
-	<section>
-		<Treemap />
+	
+	<section id="treemap" class="spacer">
+		<section>
+			<Treemap />
+		</section>
 	</section>
-</section>
-
-<svelte:head>
-	<title>Disney Incident Matcher</title>
-	<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
-	<link rel="stylesheet" href="generalstyle.scss" />
-</svelte:head>
+	
+	<svelte:head>
+		<title>Disney Incident Matcher</title>
+		<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
+		<link rel="stylesheet" href="generalstyle.scss" />
+	</svelte:head>
+</Layout>
 
 <style lang="scss">
 
