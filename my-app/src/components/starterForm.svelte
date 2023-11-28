@@ -17,7 +17,6 @@
 	let mostFrequentIncident = '';
 
 	const handleSubmit = async () => {
-		console.log('Form submitted!', formData);
 		// Convert age to a string, because in the dataset it is a string
 		// TODO: use the csvToJsonConverter to parseInt the age from a string to a number and then delete this line
 		const ageString = formData.age.toString();
@@ -30,6 +29,7 @@
 		if (getIncidentsForAgeAndGender) {
 			if (getIncidentsForAgeAndGender.length == 0) {
 				mostFrequentIncident = 'nothing';
+				// TODO:Functie als er niks gebeurt voor die persoon: NOTHING WILL HAPPEN TO YOU en confetti uiteraard
 			} else {
 				// Count the incident types
 				const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
@@ -38,10 +38,7 @@
 			}
 		} else {
 			console.error('No incidents found for the specified criteria.');
-			// TODO:Functie als er niks gebeurt voor die persoon: NOTHING WILL HAPPEN TO YOU en confetti uiteraard
 		}
-
-		//TODO: If incidents.map(incident => incidents.description contains "passed away" or "death", show a warning with: ...and a slightly small change of death)
 	};
 
 	const fetchIncident = async (gender, age) => {
@@ -120,7 +117,6 @@ $: updateFormDataInStore(formData);
 
 <form on:submit|preventDefault={handleSubmit}>
 	<legend>Which incident will happen to you?</legend>
-	<!-- TODO: change gender fieldset to dropdown menu = more compact -->
 	<fieldset>
 		<legend>I identify as...</legend>
 		<label>

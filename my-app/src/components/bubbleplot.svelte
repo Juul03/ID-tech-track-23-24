@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { formData } from '$lib/formDataStore';
 	import noUiSlider from 'nouislider';
-	// import { d3, select, scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3';
 	import * as d3 from 'd3';
 
 	let incidentData = [];
@@ -10,15 +9,14 @@
 
 	// The variable that contains the filtered incidentData array op basis van de user input
 	let filteredIncidentData = [];
-	let filteredIncidentDataOccurences = {};
-	// let incidentTypeCounts = {};
+	let filteredIncidentDataOccurences = [];
 
 	let slider;
 
 	let minAge = 0;
 	let maxAge = 100;
 	let ageInterval = [minAge, maxAge];
-	let userSelectedAgeInterval = [minAge, maxAge];
+
 
 	const initSlider = () => {
 		const sliderContainer = document.getElementById('slider');
@@ -144,6 +142,7 @@
 	// Count the amount of times 1 incident occures
 	const countIncidentTypeOccurrences = (incidents) => {
 		const incidentTypeCounts = {};
+        
 		incidents.forEach((incident) => {
 			const incidentTypes = incident.description_short;
 			incidentTypeCounts[incidentTypes] = (incidentTypeCounts[incidentTypes] || 0) + 1;
@@ -198,32 +197,16 @@
 
 		const padding = { top: 10, right: 10, bottom: 10, left: 10 };
 
-		// Count the maximum of each incident occures
 		// Extract the values (incident counts) from the incidentData object
 		const incidentCounts = Object.values(allIncidentsOccurences);
-		// Find the maximum incident count
+		// Find the maximum incident count over all the incidents
 		const maxTotalIncidents = Math.max(...incidentCounts);
-		console.log('MAXINCIDENT', maxTotalIncidents);
-
-		// Make the filtereddata in ratio with all incidents
-		const normalizedRatioData = {}; // Object to hold normalized data
-		for (const key in data) {
-			// Normalize the values based on the maximum value
-			normalizedRatioData[key] = data[key] / maxTotalIncidents;
-		}
 
 		// Define a color scale using d3.scaleOrdinal()
 		const colorForIncidents = d3
 			.scaleOrdinal()
-			.domain(incidentCounts) // Set the domain to incident types
-			.range(d3.schemeCategory10); // Set the range of colors
-
-		// Example: Get color for an incident type
-		// TODO: Remove example when everything works
-		const incidentType = 'felt ill';
-		const incidentColor = colorForIncidents(incidentType);
-
-		console.log(incidentColor); // Check if incidentColor has the color for "injury"
+			.domain(incidentCounts)
+			.range(d3.schemeCategory10.map(d => d3.interpolateRgb(d, "white")(0.5)));
 
 		// Transform the incident data into a format suitable for the treemap layout
 		const incidentEntries = Object.entries(data).map(([key, value]) => ({
@@ -249,8 +232,6 @@
 			g.selectAll('*').remove();
 		}
 
-		// TODO: change the svg width and hjeight based on the sqaure root of the incidents leafes
-
 		// Create the hierarchy structure using the transformed incident data
 		const root = d3
 			.hierarchy({ children: incidentEntries })
@@ -267,14 +248,12 @@
 		// Generate the treemap layout based on the root hierarchy
 		treemapLayout(root);
 
-		// Make the treemapLayouor proportional
+		// Make the treemapLayout proportional
 		let layout = () => {
 			const totalFilteredIncidents = calculateTotalValue();
 			const totalIncidents = incidentData.length;
 
 			const k = Math.sqrt(totalFilteredIncidents / totalIncidents);
-			// const tx = ((1 - k) / 2) * visualisationWidth;
-			// const ty = ((1 - k) / 2) * visualisationWidth;
 			// Calculate the translation factors
 			const tx = (visualisationWidth - visualisationWidth * k) / 2;
 			const ty = (visualisationHeight - visualisationHeight * k) / 2;
@@ -292,9 +271,8 @@
 				.leaves();
 		};
 
-		// Replace this function with the calculation appropriate for your data
+        // Calculates the total value based on treemap data
 		let calculateTotalValue = () => {
-			// Calculate the total value based on your treemap data
 			// sum up the values of the data
 			return root.sum((d) => d.value).value;
 		};
@@ -315,17 +293,6 @@
 			.attr('height', (d) => d.y1 - d.y0)
 			.attr('rx', '5px')
 			.attr('ry', '5px')
-			.on('mouseover', function (event, d) {
-				const tooltip = d3.select('.tooltip');
-				tooltip
-					.style('opacity', 1)
-					.html(`Value of bar: ${d.data.incidentType}`)
-					.attr('x', event.pageX)
-					.attr('y', event.pageY);
-			})
-			.on('mouseout', () => {
-				d3.select('.tooltip').style('opacity', 0);
-			});
 
 		leaf
 			.append('text')
@@ -333,7 +300,6 @@
 			.attr('y', 13)
 			.text((d) => d.data.incidentType);
 
-		// Additional text for values if needed
 		leaf
 			.append('text')
 			.attr('x', 3)
@@ -346,31 +312,6 @@
 				(incident) => incident.description_short === incidentType
 			);
 
-			let genderCounts = {};
-
-			// // Function to count male/female occurrences in specificIncidentData data
-			// const countGenderOccurrence = (specificIncidentData) => {
-			// 	genderCounts = {};
-			// 	specificIncidentData.forEach((incident) => {
-			// 		const genders = incident.gender;
-			// 		genderCounts[genders] = (genderCounts[genders] || 0) + 1;
-			// 	});
-			// 	return genderCounts;
-			// };
-
-			const countGenderOccurrence = (specificIncidentData) => {
-				genderCounts = {};
-				specificIncidentData.forEach((incident) => {
-					const description = incident.description;
-					genderCounts[description] = (genderCounts[description] || 0) + 1;
-				});
-				return genderCounts;
-			};
-
-			countGenderOccurrence(specificIncidentData);
-
-			console.log('Data on clicked', specificIncidentData);
-
 			const genderCountsFormatted = specificIncidentData.map((incident) => {
 				const { description, gender } = incident;
 				return { description, gender, value: 1 };
@@ -382,12 +323,6 @@
 
 			const parentLeafX0 = d.x0;
 			const parentLeafY0 = d.y0;
-
-			// Transform the incident data into a format suitable for the treemap layout
-			// const genderCountsFormatted = Object.entries(genderCounts).map(([key, value]) => ({
-			// 	gender: key,
-			// 	value: value
-			// }));
 
 			console.log('FORMATTED', genderCountsFormatted);
 
@@ -429,27 +364,6 @@
 					.attr('ry', '5px')
 					.style('stroke', 'transparent')
 					.style('opacity', 0.9);
-
-				// // Update text elements in the update selection
-				// updatedLeaf
-				// 	.select('text')
-				// 	.attr('x', (d) => d.x0)
-				// 	.attr('y', (d) => d.y0)
-				// 	.text((d) => d.data.gender);
-
-				// Append text elements to the enter selection
-				// enterSelection
-				// 	.append('text')
-				// 	.attr('x', (d) => d.x0 + 3)
-				// 	.attr('y', 13)
-				// 	.text((d) => d.data.gender);
-
-				// Additional text for values if needed
-				// enterSelection
-				// 	.append('text')
-				// 	.attr('x', (d) => d.x0 + 3)
-				// 	.attr('y', 26)
-				// 	.text((d) => d.value);
 			};
 
 			// Call the update function with the updatedRoot data
@@ -486,19 +400,5 @@
 		margin-top: 1rem;
 		margin-bottom: 5rem;
 		border: solid black 2px;
-	}
-
-	.tooltip {
-        z-index: 10;
-        width: 100px;
-        height: 50px;
-		position: absolute;
-		padding: 8px;
-		background-color: #333;
-		color: white;
-		border-radius: 5px;
-		pointer-events: none;
-		// opacity: 0;
-		transition: opacity 0.3s ease-in-out;
 	}
 </style>
