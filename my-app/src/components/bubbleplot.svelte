@@ -313,10 +313,19 @@
 			.attr('stroke', 'var(--primary-color)')
 			.attr('width', (d) => d.x1 - d.x0)
 			.attr('height', (d) => d.y1 - d.y0)
-			// .attr('width', (d) => (d.x1 - d.x0) * normalizedRatioData[d.data.incidentType])
-			// .attr('height', (d) => (d.y1 - d.y0) * normalizedRatioData[d.data.incidentType])
 			.attr('rx', '5px')
-			.attr('ry', '5px');
+			.attr('ry', '5px')
+			.on('mouseover', function (event, d) {
+				const tooltip = d3.select('.tooltip');
+				tooltip
+					.style('opacity', 1)
+					.html(`Value of bar: ${d.data.incidentType}`)
+					.attr('x', event.pageX)
+					.attr('y', event.pageY);
+			})
+			.on('mouseout', () => {
+				d3.select('.tooltip').style('opacity', 0);
+			});
 
 		leaf
 			.append('text')
@@ -412,12 +421,14 @@
 					.append('rect')
 					.attr('fill', (d) => (d.data.gender === 'f' ? 'pink' : 'lightblue'))
 					.attr('stroke', 'var(--primary-color)')
-                    .attr('x', (d) => parentLeafX0 + d.x0)
+					.attr('x', (d) => parentLeafX0 + d.x0)
 					.attr('y', (d) => parentLeafY0 + d.y0)
 					.attr('width', (d) => d.x1 - d.x0)
 					.attr('height', (d) => d.y1 - d.y0)
 					.attr('rx', '5px')
-					.attr('ry', '5px');
+					.attr('ry', '5px')
+					.style('stroke', 'transparent')
+					.style('opacity', 0.9);
 
 				// // Update text elements in the update selection
 				// updatedLeaf
@@ -455,7 +466,12 @@
 
 <div id="slider" on:mount={initSlider} />
 
-<svg />
+<svg>
+	<div class="tooltip" />
+
+</svg>
+
+<!-- <svg /> -->
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
@@ -470,5 +486,19 @@
 		margin-top: 1rem;
 		margin-bottom: 5rem;
 		border: solid black 2px;
+	}
+
+	.tooltip {
+        z-index: 10;
+        width: 100px;
+        height: 50px;
+		position: absolute;
+		padding: 8px;
+		background-color: #333;
+		color: white;
+		border-radius: 5px;
+		pointer-events: none;
+		// opacity: 0;
+		transition: opacity 0.3s ease-in-out;
 	}
 </style>
