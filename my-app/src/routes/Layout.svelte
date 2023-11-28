@@ -2,5 +2,3 @@
     @import '../../static/generalstyle.scss';
 </style>
   
-<slot></slot>
-  
