@@ -160,6 +160,7 @@ $: updateFormDataInStore(formData);
 {/if}
 
 <style lang="scss">
+	@import '../../static/generalstyle.scss';
 	form {
 		width: 300px;
 		height: 300px;
