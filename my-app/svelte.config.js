@@ -6,7 +6,7 @@ const svelteConfig = {
 		scss: {
       includePaths: [
         'src/components',
-        'styles',
+        'static',
         'node_modules'
       ],
       sourceMap: true,
