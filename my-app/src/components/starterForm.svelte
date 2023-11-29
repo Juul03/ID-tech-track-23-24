@@ -1,6 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { formData as formDataStore, updateFormData } from '$lib/formDataStore';
+	import { confetti } from 'tsparticles-confetti';
 
 	let incidentData = [];
 
@@ -14,7 +15,37 @@
 		updateFormData(formData);
 	};
 
+	const handleConfetti = () => {
+		confetti({
+			particleCount: 1000,
+			spread: 100,
+			origin: { y: 0.6 }
+		});
+	};
+
 	let mostFrequentIncident = '';
+
+	// Mapping object to replace incident types
+	const incidentTypeMapping = {
+		labor: 'get your baby born',
+		'asthma attack': 'get a asthma attack',
+		'change in mental status': 'get a change in mental status',
+		stroke: 'get a stroke',
+		seizure: 'have a seizure',
+		dizziness: 'get dizzy',
+		unconsciousness: 'get unconsious',
+		'chest pain': 'have chest pain',
+		'cardiac event': 'have a heart attack',
+		'head injury': 'have a head injury',
+		'short of breath': 'be short of breath',
+		'fractured body part': 'to break a bone',
+		'felt ill': 'feel unwell',
+		numbness: 'feel numb',
+		vomiting: 'to vomit',
+		fell: 'fall',
+		injury: 'get injured',
+		pain: 'get pain'
+	};
 
 	const handleSubmit = async () => {
 		// Convert age to a string, because in the dataset it is a string
@@ -28,16 +59,28 @@
 		// Count the incident that happens the most
 		if (getIncidentsForAgeAndGender) {
 			if (getIncidentsForAgeAndGender.length == 0) {
-				mostFrequentIncident = 'nothing';
+				mostFrequentIncident = 'be incident free';
+				handleConfetti();
 				// TODO:Functie als er niks gebeurt voor die persoon: NOTHING WILL HAPPEN TO YOU en confetti uiteraard
 			} else {
 				// Count the incident types
 				const incidentTypeCounts = countIncidentTypeOccurrences(getIncidentsForAgeAndGender);
 				mostFrequentIncident = getMostFrequentIncident(incidentTypeCounts);
+
+				// Check if the incident type needs to be replaced,
+				// replace it for a format that suits the "most likely" sentence in the html
+				const formattedIncident = mostFrequentIncident;
+				if (incidentTypeMapping[formattedIncident]) {
+					mostFrequentIncident = incidentTypeMapping[formattedIncident];
+				}
 			}
 		} else {
 			console.error('No incidents found for the specified criteria.');
 		}
+	};
+
+	let templateString = (incident) => {
+		console.log(mostFrequentIncident);
 	};
 
 	const fetchIncident = async (gender, age) => {
@@ -110,8 +153,8 @@
 		return mostFrequent;
 	};
 
-// Whenever the local formData changes, update the formData in the store
-$: updateFormDataInStore(formData);
+	// Whenever the local formData changes, update the formData in the store
+	$: updateFormDataInStore(formData);
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
@@ -154,9 +197,9 @@ $: updateFormDataInStore(formData);
 </form>
 
 {#if mostFrequentIncident !== ''}
-	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to get {mostFrequentIncident}</p>
+	<p transition:fly={{ y: 50, duration: 500 }}>You are most likely to {mostFrequentIncident}</p>
 {:else}
-	<p transition:fly={{ y: 50, duration: 500 }}></p> 
+	<p transition:fly={{ y: 50, duration: 500 }} />
 {/if}
 
 <style lang="scss">
@@ -200,15 +243,15 @@ $: updateFormDataInStore(formData);
 				flex: 1;
 				padding: 0.5rem 0;
 				text-align: left;
-				color:var(--primary-color);
+				color: var(--primary-color);
 
 				transition: var(--standard-transition-time);
 
 				&:hover {
-				color:var(--primary-color-light);
-				font-weight:bold;
-				transform: scale(1.025);
-			}
+					color: var(--primary-color-light);
+					font-weight: bold;
+					transform: scale(1.025);
+				}
 
 				&:nth-of-child(1),
 				&:nth-of-child(2) {
@@ -236,7 +279,6 @@ $: updateFormDataInStore(formData);
 			&:hover {
 				background: var(--primary-color-light);
 			}
-
 		}
 		input[type='radio']:checked {
 			background-color: var(--primary-color-light);
@@ -273,11 +315,10 @@ $: updateFormDataInStore(formData);
 			transition: ease-in-out var(--standard-transition-time);
 
 			&:hover {
-				background:var(--secundary-color);
+				background: var(--secundary-color);
 				color: var(--primary-color-light);
 				border: solid 1px var(--primary-color);
 				transform: scale(1.025);
-
 			}
 		}
 	}
