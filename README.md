@@ -1,4 +1,4 @@
-<img src="./my-app/static/img/mickeyfavicon.png" width="45%" max-height="100px">
+<img src="./my-app/static/img/mickeyfavicon.png" width="25%" max-height="100px">
 
 # Disney Incident Matcher
 Welcome to my repository of Disney Incident Matcher. This is a datavisualisation build in a 6 week study program in the third year of the bachelor Communication and Multimedia Design (CMD) at HvA.
@@ -63,6 +63,5 @@ node scripts/csvToJsonConverter.js
 ```
 
 ## License
-2023 Julia Hoek GPL
-"Change all versions of a program under the same license to make sure it stays free for all"
+2023 Julia Hoek MIT
 
