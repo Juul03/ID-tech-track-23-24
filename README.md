@@ -3,6 +3,8 @@
 # Disney Incident Matcher
 Welcome to my repository of Disney Incident Matcher. This is a datavisualisation build in a 6 week study program in the third year of the bachelor Communication and Multimedia Design (CMD) at HvA.
 
+First and foremost, I want to clarify that this application is not intended to make light of or mock individuals who have experienced real incidents. Such incidents are serious and deserve our respect. This application is solely created for entertainment purposes.
+
 ## What is the Disney Incident Matcher?
 The incident matcher is an application whereby people who are in for a laugh can match the type of incident they are most likely to overcome when attending to Disney/Universal studios Orlando, Florida.
 

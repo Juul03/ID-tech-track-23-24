@@ -212,7 +212,6 @@
 
 		// Check if 'g' element exists within SVG
 		let g = svg.select('g');
-
 		// If 'g' doesn't exist, create it
 		if (g.empty()) {
 			g = svg.append('g').attr('transform', `translate(${padding.left}, ${padding.top})`);
@@ -270,14 +269,35 @@
 			.selectAll('g')
 			.data(root.leaves())
 			.join('g')
-			.attr('transform', (d) => `translate(${d.x0},${d.y0})`);
+			.attr('transform', (d) => {
+				if (!isNaN(d.x0) && !isNaN(d.y0) && !isNaN(d.x1) && !isNaN(d.y1)) {
+					return `translate(${d.x0},${d.y0})`;
+				} else {
+					// Handle the case where data is invalid or missing
+					return `translate(0,0)`; // Default transformation
+				}
+			});
 
 		leaf
 			.append('rect')
 			.attr('fill', (d) => colorForIncidents(d.data.incidentType))
 			.attr('stroke', 'var(--primary-color)')
-			.attr('width', (d) => d.x1 - d.x0)
-			.attr('height', (d) => d.y1 - d.y0)
+			.attr('width', (d) => {
+				if (!isNaN(d.x0) && !isNaN(d.y0) && !isNaN(d.x1) && !isNaN(d.y1)) {
+					return d.x1 - d.x0;
+				} else {
+					// Handle the case where data is invalid or missing
+					return 0; // Default width
+				}
+			})
+			.attr('height', (d) => {
+				if (!isNaN(d.y0) && !isNaN(d.y1)) {
+					return d.y1 - d.y0;
+				} else {
+					// Handle the case where data is invalid or missing
+					return 0; // Default height
+				}
+			})
 			.attr('rx', '5px')
 			.attr('ry', '5px');
 
@@ -375,7 +395,6 @@
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
-	@import '../../static/generalstyle.scss';
 	#slider {
 		margin-top: 2.5rem;
 		width: 80%;
