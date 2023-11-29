@@ -356,6 +356,40 @@
 					.attr('width', (d) => d.x1 - d.x0)
 					.attr('height', (d) => d.y1 - d.y0);
 
+				const showTooltip = (event, d) => {
+					d3.select(event.currentTarget)
+						.transition()
+						.attr('stroke', 'white')
+						.attr('stroke-width', 2)
+						.style('opacity', 1)
+						// Make sure that when the hover interupts the overall transition, it is finished here
+						.attr('width', (d) => d.x1 - d.x0)
+						.attr('height', (d) => d.y1 - d.y0)
+						.attr('rx', '5px')
+						.attr('ry', '5px');
+
+					const tooltip = document.querySelector('.tooltip');
+					tooltip.style.display = 'block';
+					tooltip.innerHTML = d.data.gender + ': ' + d.data.description;
+
+					const x = event.pageX;
+					const y = event.pageY;
+
+					tooltip.style.left = `${x}px`;
+					tooltip.style.top = `${y}px`;
+				};
+
+				const hideToolTip = (event, d) => {
+					d3.select(event.currentTarget)
+						.transition()
+						.attr('stroke', 'transparent')
+						.attr('stroke-width', 0)
+						.style('opacity', 0.8);
+
+					const tooltip = document.querySelector('.tooltip');
+					tooltip.style.display = 'none';
+				}
+
 				// Append rectangles to the enter selection
 				const rects = enterSelection
 					.append('rect')
@@ -365,6 +399,16 @@
 					.attr('y', (d) => parentLeafY0 + d.y0)
 					.attr('width', 5)
 					.attr('height', 5)
+					.attr('stroke', 'transparent')
+					.on('mouseover', (event, d) => {
+						showTooltip(event, d);
+					})
+					.on('click', (event, d) => {
+						showTooltip(event, d);
+					})
+					.on('mouseout', (event, d) => {
+						hideToolTip(event, d);
+					});
 
 				rects
 					.transition()
@@ -374,25 +418,8 @@
 					.attr('height', (d) => d.y1 - d.y0)
 					.attr('rx', '5px')
 					.attr('ry', '5px')
-					.style('stroke', 'transparent');
-
-				rects
-					.on('mouseover', (event, d) => {
-						const tooltip = document.querySelector('.tooltip');
-						tooltip.style.display = 'block';
-						tooltip.innerHTML = d.data.description;
-
-						// Calculate tooltip position based on mouse coordinates or the element position
-						const x = event.pageX; // or use d.x or any other appropriate value for x position
-						const y = event.pageY; // or use d.y or any other appropriate value for y position
-
-						tooltip.style.left = `${x}px`;
-						tooltip.style.top = `${y}px`;
-					})
-					.on('mouseout', () => {
-						const tooltip = document.querySelector('.tooltip');
-						tooltip.style.display = 'none';
-					});
+					.attr('stroke', 'transparent')
+					.style('opacity', 0.8);
 			};
 
 			// Call the update function with the updatedRoot data
@@ -425,11 +452,12 @@
 	.tooltip {
 		position: absolute;
 		padding: 8px;
-		background-color: rgba(0, 0, 0, 0.7);
-		color: white;
+		max-width: 15rem;
+		background-color: var(--primary-color-light);
+		color: var(--secundary-color);
 		border-radius: 4px;
 		pointer-events: none;
-		z-index: 999;
+		z-index: 100;
 	}
 
 	svg {
