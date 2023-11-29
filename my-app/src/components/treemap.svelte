@@ -161,9 +161,7 @@
 	};
 
 	const createChart = (filteredData) => {
-		const data = filteredData
-			? countIncidentTypeOccurrences(filteredData)
-			: allIncidentsOccurences;
+		const data = filteredData ? countIncidentTypeOccurrences(filteredData) : allIncidentsOccurences;
 
 		const screenWidth =
 			window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -345,6 +343,11 @@
 					.attr('stroke', 'var(--primary-color)')
 					.attr('x', (d) => parentLeafX0 + d.x0)
 					.attr('y', (d) => parentLeafY0 + d.y0)
+					.attr('width', 5)
+					.attr('height', 5)
+					.transition()
+					.duration(2000)
+					.ease(d3.easeBackInOut)
 					.attr('width', (d) => d.x1 - d.x0)
 					.attr('height', (d) => d.y1 - d.y0)
 					.attr('rx', '5px')
