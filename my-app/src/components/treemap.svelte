@@ -405,6 +405,19 @@
 					tooltip.style.display = 'none';
 				};
 
+				const moveTooltip = (event, d) => {
+					const tooltip = document.querySelector('.tooltip');
+					const x = event.pageX;
+					const y = event.pageY;
+
+					if (x < screenWidth / 2) {
+						tooltip.style.left = `${x + 20}px`;
+					} else {
+						tooltip.style.left = `${x - tooltip.offsetWidth - 20}px`;
+					}
+					tooltip.style.top = `${y}px`;
+				}
+
 				// Append rectangles to the enter selection
 				const rects = enterSelection
 					.append('rect')
@@ -417,6 +430,9 @@
 					.attr('stroke', 'transparent')
 					.on('mouseover', (event, d) => {
 						showTooltip(event, d);
+					})
+					.on('mousemove', (event, d) => {
+						moveTooltip(event, d);
 					})
 					.on('click', (event, d) => {
 						showTooltip(event, d);
