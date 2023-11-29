@@ -2,6 +2,7 @@
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
 	import Treemap from '../components/treemap.svelte';
+	import Specials from '../components/specials.svelte';
 
 	import Footer from '../components/partials/footer.svelte';
 </script>
@@ -35,6 +36,10 @@
 	<section>
 		<Treemap />
 	</section>
+</section>
+
+<section>
+	<Specials/>
 </section>
 
 <Footer/>
