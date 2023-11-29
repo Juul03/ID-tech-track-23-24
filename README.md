@@ -12,7 +12,7 @@ In addition, the matcher contains a treemap that shows all the incidenttypes tha
 
 The leaves on the treemap can be selected, when users do this, the dividens of genders will appear on that incidenttype.
 
-The application is build for desktop screens. However the treemap adapts his size to the widht of the screen. when the screen is smaller than 500px, the treemap increases in length.
+The application is build for desktop screens. However the treemap adapts his size to the width of the screen. When the screen is smaller than 500px, the treemap increases in length.
 
 
 ## Build with...
