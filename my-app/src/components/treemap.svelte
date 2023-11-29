@@ -369,14 +369,24 @@
 						.attr('ry', '5px');
 
 					const tooltip = document.querySelector('.tooltip');
-					tooltip.style.display = 'block';
-					tooltip.innerHTML = d.data.gender + ': ' + d.data.description;
 
 					const x = event.pageX;
 					const y = event.pageY;
 
-					tooltip.style.left = `${x}px`;
+					// Display tooltip above the cursor
 					tooltip.style.top = `${y}px`;
+					tooltip.style.display = 'block';
+
+					tooltip.innerHTML = d.data.gender + ': ' + d.data.description;
+
+					// Set tooltip position based on mouse position and window width
+					if (x < screenWidth / 2) {
+						// If mouse position is on the left side, display tooltip on the right side of the cursor
+						tooltip.style.left = `${x + 20}px`; // You can adjust the value '20' as needed for spacing
+					} else {
+						// If mouse position is on the right side, display tooltip on the left side of the cursor
+						tooltip.style.left = `${x - tooltip.offsetWidth - 20}px`;
+					}
 				};
 
 				const hideToolTip = (event, d) => {
@@ -388,7 +398,7 @@
 
 					const tooltip = document.querySelector('.tooltip');
 					tooltip.style.display = 'none';
-				}
+				};
 
 				// Append rectangles to the enter selection
 				const rects = enterSelection
