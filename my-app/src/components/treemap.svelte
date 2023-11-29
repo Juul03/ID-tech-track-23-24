@@ -357,7 +357,7 @@
 					.attr('height', (d) => d.y1 - d.y0);
 
 				// Append rectangles to the enter selection
-				enterSelection
+				const rects = enterSelection
 					.append('rect')
 					.attr('fill', (d) => (d.data.gender === 'f' ? 'pink' : 'lightblue'))
 					.attr('stroke', 'var(--primary-color)')
@@ -365,6 +365,8 @@
 					.attr('y', (d) => parentLeafY0 + d.y0)
 					.attr('width', 5)
 					.attr('height', 5)
+
+				rects
 					.transition()
 					.duration(2000)
 					.ease(d3.easeBackInOut)
@@ -373,6 +375,24 @@
 					.attr('rx', '5px')
 					.attr('ry', '5px')
 					.style('stroke', 'transparent');
+
+				rects
+					.on('mouseover', (event, d) => {
+						const tooltip = document.querySelector('.tooltip');
+						tooltip.style.display = 'block';
+						tooltip.innerHTML = d.data.description;
+
+						// Calculate tooltip position based on mouse coordinates or the element position
+						const x = event.pageX; // or use d.x or any other appropriate value for x position
+						const y = event.pageY; // or use d.y or any other appropriate value for y position
+
+						tooltip.style.left = `${x}px`;
+						tooltip.style.top = `${y}px`;
+					})
+					.on('mouseout', () => {
+						const tooltip = document.querySelector('.tooltip');
+						tooltip.style.display = 'none';
+					});
 			};
 
 			// Call the update function with the updatedRoot data
@@ -389,9 +409,9 @@
 
 <div id="slider" />
 
-<svg>
-	<div class="tooltip" />
-</svg>
+<div class="tooltip" style="display: none;" />
+
+<svg />
 
 <style lang="scss">
 	@import '../../node_modules/nouislider/dist/nouislider.css';
@@ -400,6 +420,16 @@
 		width: 80%;
 		max-width: 800px;
 		height: 20px;
+	}
+
+	.tooltip {
+		position: absolute;
+		padding: 8px;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: white;
+		border-radius: 4px;
+		pointer-events: none;
+		z-index: 999;
 	}
 
 	svg {
