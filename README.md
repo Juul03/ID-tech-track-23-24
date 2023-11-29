@@ -62,6 +62,10 @@ If you want to run the csv to Json converter, run the following command in the t
 node scripts/csvToJsonConverter.js
 ```
 
+### How it should look like
+![image](https://github.com/Juul03/ID-tech-track-23-24/assets/118166691/a0524100-e78e-49d2-873f-bbca37bdbae5)
+![image](https://github.com/Juul03/ID-tech-track-23-24/assets/118166691/39159636-eb7d-4f05-a7ca-5234ea1ab6d3)
+
 ## License
 2023 Julia Hoek MIT
 
