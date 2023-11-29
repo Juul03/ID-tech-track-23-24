@@ -2,7 +2,15 @@
 	import StarterForm from '../components/starterForm.svelte';
 	import ScrollButton from '../components/elements/scrollDownButton.svelte';
 	import Treemap from '../components/treemap.svelte';
+
+	import Footer from '../components/partials/footer.svelte';
 </script>
+
+<svelte:head>
+	<title>Disney Incident Matcher</title>
+	<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
+	<link rel="stylesheet" href="/generalstyle.css">
+</svelte:head>
 
 <!-- Your page content goes here -->
 <section class="spacer">
@@ -29,14 +37,9 @@
 	</section>
 </section>
 
-<svelte:head>
-	<title>Disney Incident Matcher</title>
-	<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
-	<link rel="stylesheet" href="/generalstyle.css">
-</svelte:head>
+<Footer/>
 
 <style lang="scss">
-	@import '../../static/generalstyle.scss';
 	#treemap {
 		padding-top: 2rem;
 	}
