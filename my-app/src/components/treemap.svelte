@@ -394,7 +394,12 @@
 						.transition()
 						.attr('stroke', 'transparent')
 						.attr('stroke-width', 0)
-						.style('opacity', 0.8);
+						.style('opacity', 0.8)
+						// Make sure that when the hover interupts the overall transition, it is finished here
+						.attr('width', (d) => d.x1 - d.x0)
+						.attr('height', (d) => d.y1 - d.y0)
+						.attr('rx', '5px')
+						.attr('ry', '5px');
 
 					const tooltip = document.querySelector('.tooltip');
 					tooltip.style.display = 'none';
