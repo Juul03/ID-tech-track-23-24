@@ -32,7 +32,7 @@
 <svelte:head>
 	<title>Disney Incident Matcher</title>
 	<link rel="icon" href="/img/mickeyfavicon.png" type="image/png" />
-	<link rel="stylesheet" href="/generalstyle.scss">
+	<link rel="stylesheet" href="/generalstyle.css">
 </svelte:head>
 
 <style lang="scss">
