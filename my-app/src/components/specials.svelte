@@ -21,7 +21,7 @@
 		const options = {
 			root: null,
 			rootMargin: '0px',
-			threshold: 0.5 // Change this threshold as needed
+			threshold: 0.5
 		};
 
 		const observer = new IntersectionObserver((entries, observer) => {
@@ -50,7 +50,7 @@
 			} else {
 				clearInterval(interval);
 			}
-		}, 100); // Adjust speed of the counter
+		}, 100);
 	};
 
 	const fetchJSONData = async () => {
@@ -87,12 +87,13 @@
         display:flex;
         flex-direction:column;
         margin-top:1rem;
-    }
-	div {
+
+        div {
         margin:auto;
 		display: flex;
         width:500px;
 	}
+    }
 	p {
 		display: flex;
 		flex-direction: column;
@@ -107,5 +108,4 @@
 			color: var(--accent-color);
 		}
 	}
-	/* Additional styles as needed */
 </style>
