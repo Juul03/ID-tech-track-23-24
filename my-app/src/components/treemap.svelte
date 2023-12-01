@@ -4,7 +4,7 @@
 	import noUiSlider from 'nouislider';
 	import * as d3 from 'd3';
 
-	let incidentData = [];
+	let incidentData = [{}];
 	let allIncidentsOccurences = {};
 
 	// The variable that contains the filtered incidentData array op basis van de user input
